@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 10 12:06:13 2019
+# Process ID: 22771
+# Current directory: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_3_synth_1
+# Command line: vivado -log base_intr_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_intr_3.tcl
+# Log file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_3_synth_1/base_intr_3.vds
+# Journal file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source base_intr_3.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/Audio_Stream_Adau1761/Audio_Stream_Adau1761/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.3_released/installs/lin64/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP base_intr_3, cache-ID = 9304e8ffff5c737a.
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 10 12:06:29 2019...

@@ -1,0 +1,545 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="base_xbar_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_spi_direct_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_direct_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_spi_shared_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_shared_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_direct_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_timer_1_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_2_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_3_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_4_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_5_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_uartlite_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_uartlite_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xadc_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xadc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_gpio_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_intc_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_io_switch_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_spi_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_direct_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_gpio_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_gpio_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_gpio_0_synth_1"/>
+	</Run>
+	<Run Id="base_intc_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_intc_1_synth_1"/>
+	</Run>
+	<Run Id="base_io_switch_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_io_switch_1_synth_1"/>
+	</Run>
+	<Run Id="base_spi_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_direct_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_spi_1_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_spi_direct_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_0_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_timer_1_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_uartlite_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_uartlite_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_uartlite_0_synth_1"/>
+	</Run>
+	<Run Id="base_xbar_6_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_7_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_8_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rgbleds_gpio_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rgbleds_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rst_ps7_0_fclk0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rst_ps7_0_fclk1_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rst_ps7_0_fclk3_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_rst_ps7_0_fclk0_0_synth_1"/>
+	</Run>
+	<Run Id="base_switches_gpio_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_switches_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_system_interrupts_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_system_interrupts_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_dma_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_data_fifo_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_9_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_xbar_10_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_vdma_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_vdma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_register_slice_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_register_slice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axi_gpio_hdmiin_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_gpio_hdmiin_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_color_swap_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_swap_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_pixel_pack_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pixel_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_axis_register_slice_0_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_register_slice_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_axis_register_slice_0_0_synth_1"/>
+	</Run>
+	<Run Id="base_axi_dynclk_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dynclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_color_swap_0_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_swap_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_rgb2dvi_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rgb2dvi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_v_axi4s_vid_out_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_vtc_out_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_vtc_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_pixel_unpack_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pixel_unpack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_proc_sys_reset_pixelclk_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_proc_sys_reset_pixelclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_rst_ps7_0_fclk0_0_synth_1"/>
+	</Run>
+	<Run Id="base_collector_pmoda_rpi_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_collector_pmoda_rpi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_collector_rpi_27_8_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_collector_rpi_27_8_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_distributor_rpi_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_distributor_rpi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_pmoda_rpi_o_sel_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pmoda_rpi_o_sel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_pmoda_rpi_t_sel_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pmoda_rpi_t_sel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_pmoda_rpi_o_sel_0_synth_1"/>
+	</Run>
+	<Run Id="base_m04_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m05_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_8_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_s00_regslice_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m06_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_segment_stream_0_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_segment_stream_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_pc_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m14_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m14_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_us_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m07_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m03_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_pc_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m05_regslice_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m05_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m06_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m01_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_auto_us_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m01_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m04_regslice_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_m01_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m03_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m06_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_m01_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_5_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_pc_6_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_7_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m03_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_5_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_5_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_4_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m01_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+	</Run>
+	<Run Id="base_m03_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m07_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m11_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m11_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m06_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m05_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m04_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m02_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m03_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_0_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+	</Run>
+	<Run Id="base_m05_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m06_regslice_3_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_6_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_9_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_auto_pc_10_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_cc_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="base_auto_pc_11_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_11_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_pc_5_synth_1"/>
+	</Run>
+	<Run Id="base_m04_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m00_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+	</Run>
+	<Run Id="base_m02_regslice_6_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m06_regslice_5_synth_1"/>
+	</Run>
+	<Run Id="base_m05_regslice_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_s00_regslice_1_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_auto_cc_5_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_auto_cc_2_synth_1"/>
+	</Run>
+	<Run Id="base_m08_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m08_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_m09_regslice_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m09_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="base_auto_us_2_synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="base_xbar_2_synth_1"/>
+		<Parent Id="base_spi_direct_0_synth_1"/>
+		<Parent Id="base_spi_shared_0_synth_1"/>
+		<Parent Id="base_timer_0_0_synth_1"/>
+		<Parent Id="base_timer_1_0_synth_1"/>
+		<Parent Id="base_timer_2_0_synth_1"/>
+		<Parent Id="base_timer_3_0_synth_1"/>
+		<Parent Id="base_timer_4_0_synth_1"/>
+		<Parent Id="base_timer_5_0_synth_1"/>
+		<Parent Id="base_uartlite_0_synth_1"/>
+		<Parent Id="base_xadc_0_synth_1"/>
+		<Parent Id="base_gpio_0_synth_1"/>
+		<Parent Id="base_intc_1_synth_1"/>
+		<Parent Id="base_io_switch_1_synth_1"/>
+		<Parent Id="base_spi_0_synth_1"/>
+		<Parent Id="base_timer_0_synth_1"/>
+		<Parent Id="base_gpio_1_synth_1"/>
+		<Parent Id="base_intc_2_synth_1"/>
+		<Parent Id="base_io_switch_2_synth_1"/>
+		<Parent Id="base_spi_1_synth_1"/>
+		<Parent Id="base_timer_1_synth_1"/>
+		<Parent Id="base_spi_1_0_synth_1"/>
+		<Parent Id="base_timer_0_1_synth_1"/>
+		<Parent Id="base_timer_1_1_synth_1"/>
+		<Parent Id="base_uartlite_1_synth_1"/>
+		<Parent Id="base_xbar_6_synth_1"/>
+		<Parent Id="base_xbar_7_synth_1"/>
+		<Parent Id="base_xbar_8_synth_1"/>
+		<Parent Id="base_rgbleds_gpio_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk0_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk1_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk3_0_synth_1"/>
+		<Parent Id="base_switches_gpio_0_synth_1"/>
+		<Parent Id="base_system_interrupts_0_synth_1"/>
+		<Parent Id="base_axi_dma_0_0_synth_1"/>
+		<Parent Id="base_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="base_xbar_9_synth_1"/>
+		<Parent Id="base_xbar_10_synth_1"/>
+		<Parent Id="base_axi_vdma_0_synth_1"/>
+		<Parent Id="base_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="base_axi_gpio_hdmiin_0_synth_1"/>
+		<Parent Id="base_color_swap_0_0_synth_1"/>
+		<Parent Id="base_pixel_pack_0_synth_1"/>
+		<Parent Id="base_axis_register_slice_0_1_synth_1"/>
+		<Parent Id="base_axi_dynclk_0_synth_1"/>
+		<Parent Id="base_color_swap_0_1_synth_1"/>
+		<Parent Id="base_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="base_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="base_vtc_out_0_synth_1"/>
+		<Parent Id="base_pixel_unpack_0_synth_1"/>
+		<Parent Id="base_proc_sys_reset_pixelclk_0_synth_1"/>
+		<Parent Id="base_collector_pmoda_rpi_0_synth_1"/>
+		<Parent Id="base_collector_rpi_27_8_0_synth_1"/>
+		<Parent Id="base_distributor_rpi_0_synth_1"/>
+		<Parent Id="base_pmoda_rpi_o_sel_0_synth_1"/>
+		<Parent Id="base_pmoda_rpi_t_sel_0_synth_1"/>
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+		<Parent Id="base_m05_regslice_0_synth_1"/>
+		<Parent Id="base_auto_pc_8_synth_1"/>
+		<Parent Id="base_s00_regslice_4_synth_1"/>
+		<Parent Id="base_m06_regslice_5_synth_1"/>
+		<Parent Id="base_segment_stream_0_0_synth_1"/>
+		<Parent Id="base_auto_pc_0_synth_1"/>
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+		<Parent Id="base_auto_us_0_synth_1"/>
+		<Parent Id="base_m07_regslice_3_synth_1"/>
+		<Parent Id="base_m03_regslice_0_synth_1"/>
+		<Parent Id="base_m02_regslice_0_synth_1"/>
+		<Parent Id="base_auto_pc_5_synth_1"/>
+		<Parent Id="base_m05_regslice_4_synth_1"/>
+		<Parent Id="base_m05_regslice_2_synth_1"/>
+		<Parent Id="base_m06_regslice_2_synth_1"/>
+		<Parent Id="base_m07_regslice_2_synth_1"/>
+		<Parent Id="base_m01_regslice_0_synth_1"/>
+		<Parent Id="base_auto_us_1_synth_1"/>
+		<Parent Id="base_s00_regslice_3_synth_1"/>
+		<Parent Id="base_m01_regslice_3_synth_1"/>
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+		<Parent Id="base_m04_regslice_4_synth_1"/>
+		<Parent Id="base_m02_regslice_4_synth_1"/>
+		<Parent Id="base_auto_pc_2_synth_1"/>
+		<Parent Id="base_auto_pc_3_synth_1"/>
+		<Parent Id="base_auto_pc_4_synth_1"/>
+		<Parent Id="base_m01_regslice_1_synth_1"/>
+		<Parent Id="base_m03_regslice_1_synth_1"/>
+		<Parent Id="base_m02_regslice_1_synth_1"/>
+		<Parent Id="base_m06_regslice_0_synth_1"/>
+		<Parent Id="base_m07_regslice_0_synth_1"/>
+		<Parent Id="base_m00_regslice_5_synth_1"/>
+		<Parent Id="base_m01_regslice_5_synth_1"/>
+		<Parent Id="base_auto_pc_1_synth_1"/>
+		<Parent Id="base_auto_pc_6_synth_1"/>
+		<Parent Id="base_auto_pc_7_synth_1"/>
+		<Parent Id="base_m07_regslice_4_synth_1"/>
+		<Parent Id="base_m03_regslice_5_synth_1"/>
+		<Parent Id="base_m02_regslice_5_synth_1"/>
+		<Parent Id="base_m00_regslice_4_synth_1"/>
+		<Parent Id="base_m01_regslice_2_synth_1"/>
+		<Parent Id="base_m02_regslice_2_synth_1"/>
+		<Parent Id="base_m00_regslice_2_synth_1"/>
+		<Parent Id="base_m03_regslice_2_synth_1"/>
+		<Parent Id="base_s00_regslice_2_synth_1"/>
+		<Parent Id="base_m07_regslice_1_synth_1"/>
+		<Parent Id="base_m11_regslice_1_synth_1"/>
+		<Parent Id="base_m06_regslice_1_synth_1"/>
+		<Parent Id="base_m05_regslice_1_synth_1"/>
+		<Parent Id="base_m04_regslice_3_synth_1"/>
+		<Parent Id="base_s00_regslice_0_synth_1"/>
+		<Parent Id="base_m02_regslice_3_synth_1"/>
+		<Parent Id="base_m03_regslice_3_synth_1"/>
+		<Parent Id="base_m00_regslice_0_synth_1"/>
+		<Parent Id="base_m05_regslice_3_synth_1"/>
+		<Parent Id="base_m06_regslice_3_synth_1"/>
+		<Parent Id="base_m00_regslice_6_synth_1"/>
+		<Parent Id="base_auto_pc_9_synth_1"/>
+		<Parent Id="base_auto_pc_10_synth_1"/>
+		<Parent Id="base_auto_cc_2_synth_1"/>
+		<Parent Id="base_auto_pc_11_synth_1"/>
+		<Parent Id="base_m04_regslice_5_synth_1"/>
+		<Parent Id="base_m00_regslice_1_synth_1"/>
+		<Parent Id="base_m02_regslice_6_synth_1"/>
+		<Parent Id="base_m05_regslice_5_synth_1"/>
+		<Parent Id="base_s00_regslice_1_synth_1"/>
+		<Parent Id="base_auto_cc_5_synth_1"/>
+		<Parent Id="base_m08_regslice_2_synth_1"/>
+		<Parent Id="base_m09_regslice_2_synth_1"/>
+		<Parent Id="base_auto_us_2_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="base_xbar_2_synth_1"/>
+		<Parent Id="base_spi_direct_0_synth_1"/>
+		<Parent Id="base_spi_shared_0_synth_1"/>
+		<Parent Id="base_timer_0_0_synth_1"/>
+		<Parent Id="base_timer_1_0_synth_1"/>
+		<Parent Id="base_timer_2_0_synth_1"/>
+		<Parent Id="base_timer_3_0_synth_1"/>
+		<Parent Id="base_timer_4_0_synth_1"/>
+		<Parent Id="base_timer_5_0_synth_1"/>
+		<Parent Id="base_uartlite_0_synth_1"/>
+		<Parent Id="base_xadc_0_synth_1"/>
+		<Parent Id="base_gpio_0_synth_1"/>
+		<Parent Id="base_intc_1_synth_1"/>
+		<Parent Id="base_io_switch_1_synth_1"/>
+		<Parent Id="base_spi_0_synth_1"/>
+		<Parent Id="base_timer_0_synth_1"/>
+		<Parent Id="base_gpio_1_synth_1"/>
+		<Parent Id="base_intc_2_synth_1"/>
+		<Parent Id="base_io_switch_2_synth_1"/>
+		<Parent Id="base_spi_1_synth_1"/>
+		<Parent Id="base_timer_1_synth_1"/>
+		<Parent Id="base_spi_1_0_synth_1"/>
+		<Parent Id="base_timer_0_1_synth_1"/>
+		<Parent Id="base_timer_1_1_synth_1"/>
+		<Parent Id="base_uartlite_1_synth_1"/>
+		<Parent Id="base_xbar_6_synth_1"/>
+		<Parent Id="base_xbar_7_synth_1"/>
+		<Parent Id="base_xbar_8_synth_1"/>
+		<Parent Id="base_rgbleds_gpio_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk0_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk1_0_synth_1"/>
+		<Parent Id="base_rst_ps7_0_fclk3_0_synth_1"/>
+		<Parent Id="base_switches_gpio_0_synth_1"/>
+		<Parent Id="base_system_interrupts_0_synth_1"/>
+		<Parent Id="base_axi_dma_0_0_synth_1"/>
+		<Parent Id="base_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="base_xbar_9_synth_1"/>
+		<Parent Id="base_xbar_10_synth_1"/>
+		<Parent Id="base_axi_vdma_0_synth_1"/>
+		<Parent Id="base_axis_register_slice_0_0_synth_1"/>
+		<Parent Id="base_axi_gpio_hdmiin_0_synth_1"/>
+		<Parent Id="base_color_swap_0_0_synth_1"/>
+		<Parent Id="base_pixel_pack_0_synth_1"/>
+		<Parent Id="base_axis_register_slice_0_1_synth_1"/>
+		<Parent Id="base_axi_dynclk_0_synth_1"/>
+		<Parent Id="base_color_swap_0_1_synth_1"/>
+		<Parent Id="base_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="base_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="base_vtc_out_0_synth_1"/>
+		<Parent Id="base_pixel_unpack_0_synth_1"/>
+		<Parent Id="base_proc_sys_reset_pixelclk_0_synth_1"/>
+		<Parent Id="base_collector_pmoda_rpi_0_synth_1"/>
+		<Parent Id="base_collector_rpi_27_8_0_synth_1"/>
+		<Parent Id="base_distributor_rpi_0_synth_1"/>
+		<Parent Id="base_pmoda_rpi_o_sel_0_synth_1"/>
+		<Parent Id="base_pmoda_rpi_t_sel_0_synth_1"/>
+		<Parent Id="base_m04_regslice_0_synth_1"/>
+		<Parent Id="base_m05_regslice_0_synth_1"/>
+		<Parent Id="base_auto_pc_8_synth_1"/>
+		<Parent Id="base_s00_regslice_4_synth_1"/>
+		<Parent Id="base_m06_regslice_5_synth_1"/>
+		<Parent Id="base_segment_stream_0_0_synth_1"/>
+		<Parent Id="base_auto_pc_0_synth_1"/>
+		<Parent Id="base_m14_regslice_0_synth_1"/>
+		<Parent Id="base_auto_us_0_synth_1"/>
+		<Parent Id="base_m07_regslice_3_synth_1"/>
+		<Parent Id="base_m03_regslice_0_synth_1"/>
+		<Parent Id="base_m02_regslice_0_synth_1"/>
+		<Parent Id="base_auto_pc_5_synth_1"/>
+		<Parent Id="base_m05_regslice_4_synth_1"/>
+		<Parent Id="base_m05_regslice_2_synth_1"/>
+		<Parent Id="base_m06_regslice_2_synth_1"/>
+		<Parent Id="base_m07_regslice_2_synth_1"/>
+		<Parent Id="base_m01_regslice_0_synth_1"/>
+		<Parent Id="base_auto_us_1_synth_1"/>
+		<Parent Id="base_s00_regslice_3_synth_1"/>
+		<Parent Id="base_m01_regslice_3_synth_1"/>
+		<Parent Id="base_m00_regslice_3_synth_1"/>
+		<Parent Id="base_m04_regslice_4_synth_1"/>
+		<Parent Id="base_m02_regslice_4_synth_1"/>
+		<Parent Id="base_auto_pc_2_synth_1"/>
+		<Parent Id="base_auto_pc_3_synth_1"/>
+		<Parent Id="base_auto_pc_4_synth_1"/>
+		<Parent Id="base_m01_regslice_1_synth_1"/>
+		<Parent Id="base_m03_regslice_1_synth_1"/>
+		<Parent Id="base_m02_regslice_1_synth_1"/>
+		<Parent Id="base_m06_regslice_0_synth_1"/>
+		<Parent Id="base_m07_regslice_0_synth_1"/>
+		<Parent Id="base_m00_regslice_5_synth_1"/>
+		<Parent Id="base_m01_regslice_5_synth_1"/>
+		<Parent Id="base_auto_pc_1_synth_1"/>
+		<Parent Id="base_auto_pc_6_synth_1"/>
+		<Parent Id="base_auto_pc_7_synth_1"/>
+		<Parent Id="base_m07_regslice_4_synth_1"/>
+		<Parent Id="base_m03_regslice_5_synth_1"/>
+		<Parent Id="base_m02_regslice_5_synth_1"/>
+		<Parent Id="base_m00_regslice_4_synth_1"/>
+		<Parent Id="base_m01_regslice_2_synth_1"/>
+		<Parent Id="base_m02_regslice_2_synth_1"/>
+		<Parent Id="base_m00_regslice_2_synth_1"/>
+		<Parent Id="base_m03_regslice_2_synth_1"/>
+		<Parent Id="base_s00_regslice_2_synth_1"/>
+		<Parent Id="base_m07_regslice_1_synth_1"/>
+		<Parent Id="base_m11_regslice_1_synth_1"/>
+		<Parent Id="base_m06_regslice_1_synth_1"/>
+		<Parent Id="base_m05_regslice_1_synth_1"/>
+		<Parent Id="base_m04_regslice_3_synth_1"/>
+		<Parent Id="base_s00_regslice_0_synth_1"/>
+		<Parent Id="base_m02_regslice_3_synth_1"/>
+		<Parent Id="base_m03_regslice_3_synth_1"/>
+		<Parent Id="base_m00_regslice_0_synth_1"/>
+		<Parent Id="base_m05_regslice_3_synth_1"/>
+		<Parent Id="base_m06_regslice_3_synth_1"/>
+		<Parent Id="base_m00_regslice_6_synth_1"/>
+		<Parent Id="base_auto_pc_9_synth_1"/>
+		<Parent Id="base_auto_pc_10_synth_1"/>
+		<Parent Id="base_auto_cc_2_synth_1"/>
+		<Parent Id="base_auto_pc_11_synth_1"/>
+		<Parent Id="base_m04_regslice_5_synth_1"/>
+		<Parent Id="base_m00_regslice_1_synth_1"/>
+		<Parent Id="base_m02_regslice_6_synth_1"/>
+		<Parent Id="base_m05_regslice_5_synth_1"/>
+		<Parent Id="base_s00_regslice_1_synth_1"/>
+		<Parent Id="base_auto_cc_5_synth_1"/>
+		<Parent Id="base_m08_regslice_2_synth_1"/>
+		<Parent Id="base_m09_regslice_2_synth_1"/>
+		<Parent Id="base_auto_us_2_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

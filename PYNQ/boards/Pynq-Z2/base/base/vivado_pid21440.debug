@@ -1,0 +1,74 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.3 (64-bit)
+# SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Current time: Sun Mar 10 10:38:46 GMT 2019
+# Process ID (PID): 21440
+# User: eashanw
+# OS: Red Hat Enterprise Linux Workstation release 7.6 (Maipo)
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Sun Mar 10 10:38:46 GMT 2019
+ui.utils.e: WARNING: GUI thread is sluggish  12285 ms
+Thread: AWT-EventQueue-1
+	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(Unknown Source)
+	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(Unknown Source)
+	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+	at java.base@9.0.4/java.util.concurrent.locks.ReentrantLock.lock(Unknown Source)
+	at java.desktop@9.0.4/sun.awt.SunToolkit.awtLock(Unknown Source)
+	at java.desktop@9.0.4/sun.awt.X11.XDecoratedPeer.setBounds(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Component.reshapeNativePeer(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Component.reshape(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Window.reshape(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Component.setBounds(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Window.setBounds(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Component.resize(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Component.setSize(Unknown Source)
+	at java.desktop@9.0.4/java.awt.Window.setSize(Unknown Source)
+	at ui.b.c.g.setSize(SourceFile:212)
+	at ui.b.c.g.a(SourceFile:280)
+	at ui.b.c.g.a(SourceFile:205)
+	at ui.b.c.g.bE(SourceFile:348)
+	at ui.b.c.g.showDialog(SourceFile:344)
+	at ui.b.f.r.showDialog(SourceFile:266)
+	at ui.views.S.a.b.guh(SourceFile:408)
+	at ui.views.S.a.p.taskEnded(SourceFile:155)
+	at ui.views.x.a.y.b(SourceFile:94)
+	at ui.views.S.a.p.b(SourceFile:125)
+	at ui.b.c.bx.y(SourceFile:702)
+	at ui.b.c.bG.finished(SourceFile:805)
+	at ui.frmwork.x.run(SourceFile:195)
+	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+
+
+	at ui.utils.d.c.Ia(SourceFile:630)
+	at ui.utils.m.Ia(SourceFile:2534)
+	at ui.utils.m.g(SourceFile:2586)
+	at ui.frmwork.b.d.a(SourceFile:182)
+	at ui.frmwork.b.d.dispatchEvent(SourceFile:87)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+

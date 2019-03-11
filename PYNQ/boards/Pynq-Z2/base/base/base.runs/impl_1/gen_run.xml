@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1552302672">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="base_wrapper.drc"/>
+  <File Type="BG-BGN" Name="base_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="base_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="base_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="base_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="base_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="base_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="base_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="base_wrapper.msk"/>
+  <File Type="BG-BIN" Name="base_wrapper.bin"/>
+  <File Type="BG-BIT" Name="base_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="base_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="base_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="base_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="base_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="base_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="base_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="base_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="base_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="base_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="base_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="base_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="base_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="base_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="base_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="base_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="base_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="base_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="base_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="base_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="base_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="base_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="base_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="base_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="base_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="base_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="base_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="base_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="base_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="base_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="base_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="base_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="base_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="base_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="base_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="base_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="base_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="base_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="base_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="base_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="base_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="base_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="base_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="base_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="base_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="base_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="base_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="base_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="base_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="base_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="base_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="base_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="base_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="base_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="base_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="base_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="base_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/base/base.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/base/hdl/base_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="base_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../vivado/constraints/base.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="base_m09_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m08_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m06_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m16_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m15_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m10_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m07_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m11_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_10"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m07_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_us_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m07_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m10_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_11"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_tier2_xbar_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_tier2_xbar_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m01_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m07_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m06_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_12"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_cc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m08_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m07_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_us_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_us_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_segment_stream_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m06_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m05_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dma_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_t_sel_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pmoda_rpi_o_sel_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_distributor_rpi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_distributor_pmoda_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_collector_rpi_27_8_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_collector_pmoda_rpi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_proc_sys_reset_pixelclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pixel_unpack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rgb2dvi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_adau1761_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_hdmi_out_hpd_video_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_swap_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dynclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_register_slice_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_vtc_in_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_v_vid_in_axi4s_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dvi2rgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_swap_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_gpio_hdmiin_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m04_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_vdma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_trace_cntrl_32_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m06_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_data_fifo_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dma_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_trace_cntrl_64_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m06_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_data_fifo_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_system_interrupts_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_auto_pc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_switches_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_slice_pmodb_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_ps7_0_fclk0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rgbleds_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_vtc_out_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_leds_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_10"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rpi_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_color_convert_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ilmb_v10_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dlmb_v10_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dff_en_reset_vector_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_tier2_xbar_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_gpio_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_uartlite_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xadc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_shared_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ps7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_uartlite_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_axis_register_slice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_bram_ctrl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_mb_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_io_switch_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m03_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m14_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_iic_direct_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_pixel_pack_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_dff_en_reset_vector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_s00_regslice_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_timer_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_clk_wiz_10MHz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_arduino_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m02_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m13_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_spi_direct_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_btns_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m00_regslice_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="base_m11_regslice_0"/>
+</GenRun>

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 10 12:14:28 2019
+# Process ID: 5930
+# Current directory: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_direct_0_synth_1
+# Command line: vivado -log base_spi_direct_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_spi_direct_0.tcl
+# Log file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_direct_0_synth_1/base_spi_direct_0.vds
+# Journal file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_direct_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source base_spi_direct_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/Audio_Stream_Adau1761/Audio_Stream_Adau1761/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.3_released/installs/lin64/Vivado/2018.3/data/ip'.
+Command: synth_design -top base_spi_direct_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6884 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

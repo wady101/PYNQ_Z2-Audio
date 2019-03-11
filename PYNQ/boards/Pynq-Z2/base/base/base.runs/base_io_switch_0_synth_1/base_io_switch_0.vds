@@ -1,0 +1,573 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 10 12:06:02 2019
+# Process ID: 22236
+# Current directory: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_0_synth_1
+# Command line: vivado -log base_io_switch_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_io_switch_0.tcl
+# Log file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_0_synth_1/base_io_switch_0.vds
+# Journal file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source base_io_switch_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/Audio_Stream_Adau1761/Audio_Stream_Adau1761/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.3_released/installs/lin64/Vivado/2018.3/data/ip'.
+Command: synth_design -top base_io_switch_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1451.383 ; gain = 86.844 ; free physical = 20273 ; free virtual = 31051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_io_switch_0' [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_0/synth/base_io_switch_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'io_switch_v1_1' [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1.v:4]
+	Parameter C_INTERFACE_TYPE bound to: 3 - type: string 
+	Parameter C_IO_SWITCH_WIDTH bound to: 20 - type: integer 
+	Parameter C_NUM_PWMS bound to: 6 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 8 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'io_switch_v1_1_S_AXI' [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:4]
+	Parameter C_INTERFACE_TYPE bound to: 3 - type: string 
+	Parameter C_IO_SWITCH_WIDTH bound to: 20 - type: integer 
+	Parameter C_NUM_PWMS bound to: 6 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 8 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'io_switch' [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:7]
+	Parameter C_IO_SWITCH_WIDTH bound to: 20 - type: integer 
+	Parameter C_NUM_PWMS bound to: 6 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 8 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'io_switch_bit' [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:57]
+	Parameter C_NUM_PWMS bound to: 6 - type: integer 
+	Parameter C_NUM_TIMERS bound to: 8 - type: integer 
+	Parameter C_NUM_SS bound to: 1 - type: integer 
+WARNING: [Synth 8-324] index 1 out of range [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_bit' (1#1) [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch_bit.v:57]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 10 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 10 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 10 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 18 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:451]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 18 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:469]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 18 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:469]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 18 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:469]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 18 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:469]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 29 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:487]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 29 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:487]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 29 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:509]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 29 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:509]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 19 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:531]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 19 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:531]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 8 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:548]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 8 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:548]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 8 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:561]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 8 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:561]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 8 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:561]
+WARNING: [Synth 8-350] instance 'd_i' of module 'io_switch_bit' requires 58 connections, but only 8 given [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:561]
+WARNING: [Synth 8-3848] Net uart1_rx_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sda0_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net scl0_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sda1_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net scl1_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net sck1_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net mosi1_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+WARNING: [Synth 8-3848] Net miso1_int in module/entity io_switch does not have driver. [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch' (2#1) [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:7]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:301]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_v1_1_S_AXI' (3#1) [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'io_switch_v1_1' (4#1) [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/hdl/io_switch_v1_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'base_io_switch_0' (5#1) [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_0/synth/base_io_switch_0.v:57]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[20]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[19]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[18]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[17]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[16]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[15]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[14]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[13]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[12]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[11]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[10]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[9]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[8]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[7]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[6]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[5]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[4]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[3]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[2]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[1]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel5[0]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[20]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[19]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[18]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[17]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[16]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[15]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[14]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[13]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[12]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[11]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[10]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[9]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[8]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[7]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[6]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[5]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[4]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[3]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[2]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[1]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel6[0]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[31]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[30]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[29]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[28]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[27]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[26]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[25]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[24]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[23]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[22]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[21]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[20]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[19]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[18]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[17]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[16]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[15]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[14]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[13]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[12]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[11]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[10]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[9]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[8]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[7]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[6]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[5]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[4]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[3]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[2]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[1]
+WARNING: [Synth 8-3331] design io_switch has unconnected port gpio_sel7[0]
+WARNING: [Synth 8-3331] design io_switch has unconnected port uart1_tx_o
+WARNING: [Synth 8-3331] design io_switch has unconnected port sda0_o
+WARNING: [Synth 8-3331] design io_switch has unconnected port sda0_t
+WARNING: [Synth 8-3331] design io_switch has unconnected port scl0_o
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1496.148 ; gain = 131.609 ; free physical = 20118 ; free virtual = 30895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:uart1_tx_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sck0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sck0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:miso0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:miso0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:mosi0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:mosi0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:ss0_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:ss0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sck1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sck1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:miso1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:miso1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:mosi1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:mosi1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:ss1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:ss1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sda0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sda0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:scl0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:scl0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sda1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:sda1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:scl1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:scl1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:pwm_o[5] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:pwm_o[4] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:pwm_o[3] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:pwm_o[2] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:pwm_o[1] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:pwm_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[7] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[6] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[5] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[4] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[3] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[2] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[1] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[0].d_i:timer_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:uart1_tx_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sck0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sck0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:miso0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:miso0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:mosi0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:mosi0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:ss0_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:ss0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sck1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sck1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:miso1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:miso1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:mosi1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:mosi1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:ss1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:ss1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sda0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sda0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:scl0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:scl0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sda1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:sda1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:scl1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:scl1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:pwm_o[5] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:pwm_o[4] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:pwm_o[3] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:pwm_o[2] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:pwm_o[1] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:pwm_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[7] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[6] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[5] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[4] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[3] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[2] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[1] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[1].d_i:timer_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:uart1_tx_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sck0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sck0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:miso0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:miso0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:mosi0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:mosi0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:ss0_o[0] to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:ss0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sck1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sck1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:miso1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:miso1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:mosi1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:mosi1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:ss1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:ss1_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sda0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sda0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:scl0_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:scl0_t to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+WARNING: [Synth 8-3295] tying undriven pin genblk1_1.io_switch_bit_2_0[2].d_i:sda1_o to constant 0 [/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ipshared/6c92/src/io_switch.v:437]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1496.148 ; gain = 131.609 ; free physical = 20114 ; free virtual = 30892
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1496.148 ; gain = 131.609 ; free physical = 20114 ; free virtual = 30892
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1924.898 ; gain = 0.000 ; free physical = 20174 ; free virtual = 30958
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1924.902 ; gain = 0.000 ; free physical = 20175 ; free virtual = 30959
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.33 . Memory (MB): peak = 1926.898 ; gain = 2.000 ; free physical = 20037 ; free virtual = 30821
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19997 ; free virtual = 30783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19997 ; free virtual = 30783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19998 ; free virtual = 30784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19973 ; free virtual = 30759
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  10 Input     32 Bit        Muxes := 8     
+	  25 Input     24 Bit        Muxes := 20    
+	   2 Input     24 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 45    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module io_switch_bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  25 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module io_switch_v1_1_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  10 Input     32 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/io_switch_v1_1_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/io_switch_v1_1_S_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 20211 ; free virtual = 31000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19650 ; free virtual = 30437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19637 ; free virtual = 30424
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19609 ; free virtual = 30396
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19669 ; free virtual = 30456
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19669 ; free virtual = 30456
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19669 ; free virtual = 30456
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19670 ; free virtual = 30457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19672 ; free virtual = 30459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19672 ; free virtual = 30459
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    46|
+|3     |LUT3  |    29|
+|4     |LUT4  |    99|
+|5     |LUT5  |    71|
+|6     |LUT6  |   338|
+|7     |MUXF7 |    17|
+|8     |MUXF8 |     3|
+|9     |FDRE  |   301|
+|10    |FDSE  |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+------------------------------+---------------------+------+
+|      |Instance                      |Module               |Cells |
++------+------------------------------+---------------------+------+
+|1     |top                           |                     |   906|
+|2     |  inst                        |io_switch_v1_1       |   906|
+|3     |    io_switch_v1_1_S_AXI_inst |io_switch_v1_1_S_AXI |   906|
++------+------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:01 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19672 ; free virtual = 30459
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 119 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1926.898 ; gain = 131.609 ; free physical = 19764 ; free virtual = 30551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1926.898 ; gain = 562.359 ; free physical = 19777 ; free virtual = 30564
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1928.902 ; gain = 0.000 ; free physical = 20442 ; free virtual = 31231
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 231 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1928.902 ; gain = 575.973 ; free physical = 20495 ; free virtual = 31282
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1928.902 ; gain = 0.000 ; free physical = 20469 ; free virtual = 31256
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_0_synth_1/base_io_switch_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_io_switch_0, cache-ID = c41a8c0b68488b64
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1952.926 ; gain = 0.000 ; free physical = 20436 ; free virtual = 31224
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_0_synth_1/base_io_switch_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_io_switch_0_utilization_synth.rpt -pb base_io_switch_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 10 12:07:25 2019...

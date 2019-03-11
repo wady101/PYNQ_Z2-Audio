@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 11 10:37:33 2019
+# Process ID: 2379
+# Current directory: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base
+# Command line: vivado base.xpr
+# Log file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/vivado.log
+# Journal file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/Audio_Stream_Adau1761/Audio_Stream_Adau1761/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.3_released/installs/lin64/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_2' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xbar_2/base_xbar_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_2' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xbar_2/base_xbar_2_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_2' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xbar_2/base_xbar_2_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_2' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xbar_2/base_xbar_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_2' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xbar_2/base_xbar_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_direct_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_direct_0/base_spi_direct_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_direct_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_direct_0/base_spi_direct_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_direct_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_direct_0/base_spi_direct_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_direct_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_direct_0/base_spi_direct_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_direct_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_direct_0/base_spi_direct_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_shared_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_shared_0/base_spi_shared_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_shared_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_shared_0/base_spi_shared_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_shared_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_shared_0/base_spi_shared_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_shared_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_shared_0/base_spi_shared_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_spi_shared_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_spi_shared_0/base_spi_shared_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_0_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_0_0/base_timer_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_0_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_0_0/base_timer_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_0_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_0_0/base_timer_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_0_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_0_0/base_timer_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_0_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_0_0/base_timer_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_1_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_1_0/base_timer_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_1_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_1_0/base_timer_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_1_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_1_0/base_timer_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_1_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_1_0/base_timer_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_1_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_1_0/base_timer_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_2_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_2_0/base_timer_2_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_2_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_2_0/base_timer_2_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_2_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_2_0/base_timer_2_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_2_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_2_0/base_timer_2_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_2_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_2_0/base_timer_2_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_3_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_3_0/base_timer_3_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_3_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_3_0/base_timer_3_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_3_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_3_0/base_timer_3_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_3_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_3_0/base_timer_3_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_3_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_3_0/base_timer_3_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_4_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_4_0/base_timer_4_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_4_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_4_0/base_timer_4_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_4_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_4_0/base_timer_4_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_4_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_4_0/base_timer_4_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_4_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_4_0/base_timer_4_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_5_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_5_0/base_timer_5_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_5_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_5_0/base_timer_5_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_5_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_5_0/base_timer_5_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_5_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_5_0/base_timer_5_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_timer_5_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_timer_5_0/base_timer_5_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_uartlite_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_uartlite_0/base_uartlite_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_uartlite_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_uartlite_0/base_uartlite_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_uartlite_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_uartlite_0/base_uartlite_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_uartlite_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_uartlite_0/base_uartlite_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_uartlite_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_uartlite_0/base_uartlite_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xadc_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xadc_0/base_xadc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xadc_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xadc_0/base_xadc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xadc_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xadc_0/base_xadc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xadc_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xadc_0/base_xadc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xadc_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_xadc_0/base_xadc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dff_en_reset_vector_0_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dff_en_reset_vector_0_1/base_dff_en_reset_vector_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dff_en_reset_vector_0_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dff_en_reset_vector_0_1/base_dff_en_reset_vector_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dff_en_reset_vector_0_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dff_en_reset_vector_0_1/base_dff_en_reset_vector_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dff_en_reset_vector_0_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dff_en_reset_vector_0_1/base_dff_en_reset_vector_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dff_en_reset_vector_0_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dff_en_reset_vector_0_1/base_dff_en_reset_vector_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_gpio_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_gpio_0/base_gpio_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_gpio_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_gpio_0/base_gpio_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_gpio_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_gpio_0/base_gpio_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_gpio_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_gpio_0/base_gpio_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_gpio_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_gpio_0/base_gpio_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_iic_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_iic_0/base_iic_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_iic_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_iic_0/base_iic_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_iic_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_iic_0/base_iic_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_iic_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_iic_0/base_iic_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_iic_0' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_iic_0/base_iic_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intc_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intc_1/base_intc_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intc_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intc_1/base_intc_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intc_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intc_1/base_intc_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intc_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intc_1/base_intc_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intc_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intc_1/base_intc_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intr_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intr_1/base_intr_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intr_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intr_1/base_intr_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intr_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intr_1/base_intr_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intr_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intr_1/base_intr_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_intr_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_intr_1/base_intr_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_io_switch_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_1/base_io_switch_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_io_switch_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_1/base_io_switch_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_io_switch_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_1/base_io_switch_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_io_switch_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_1/base_io_switch_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_io_switch_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_io_switch_1/base_io_switch_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dlmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dlmb_v10_1/base_dlmb_v10_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dlmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dlmb_v10_1/base_dlmb_v10_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dlmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dlmb_v10_1/base_dlmb_v10_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dlmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dlmb_v10_1/base_dlmb_v10_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_dlmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_dlmb_v10_1/base_dlmb_v10_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ilmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_ilmb_v10_1/base_ilmb_v10_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ilmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_ilmb_v10_1/base_ilmb_v10_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ilmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_ilmb_v10_1/base_ilmb_v10_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ilmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_ilmb_v10_1/base_ilmb_v10_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ilmb_v10_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_ilmb_v10_1/base_ilmb_v10_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_lmb_bram_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_lmb_bram_1/base_lmb_bram_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_lmb_bram_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_lmb_bram_1/base_lmb_bram_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_lmb_bram_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_lmb_bram_1/base_lmb_bram_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_lmb_bram_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_lmb_bram_1/base_lmb_bram_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_lmb_bram_1' generated file not found '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_lmb_bram_1/base_lmb_bram_1_sim_netlist.vhdl'. Please regenerate to continue.
+INFO: [Common 17-14] Message 'IP_Flow 19-3664' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_project: Time (s): cpu = 00:00:56 ; elapsed = 00:01:10 . Memory (MB): peak = 6965.875 ; gain = 653.434 ; free physical = 27242 ; free virtual = 37828
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_ilmb_v10_1, cache-ID = 12c61f65b5ef0177; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_4, cache-ID = 7548e0abd075a3b7; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_mb_2, cache-ID = 7df7b15760754c1f; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_dlmb_v10_2, cache-ID = 12c61f65b5ef0177; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_lmb_bram_if_cntlr_2, cache-ID = b4a034691dff0a31; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m09_regslice_1, cache-ID = 7548e0abd075a3b7; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_rst_clk_wiz_1_100M_2, cache-ID = 2e16cee739b63545; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_4, cache-ID = 7bef93233aff4e78; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_lmb_bram_if_cntlr_3, cache-ID = b4a034691dff0a31; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_mb_1, cache-ID = 7df7b15760754c1f; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_ilmb_v10_2, cache-ID = 12c61f65b5ef0177; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m03_regslice_6, cache-ID = 7548e0abd075a3b7; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_mb_3, cache-ID = 7df7b15760754c1f; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_dff_en_reset_vector_0_2, cache-ID = c848ad6164613f8f; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_lmb_bram_1, cache-ID = f3de3bd6345a9e48; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m12_regslice_0, cache-ID = 7548e0abd075a3b7; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_regslice_5, cache-ID = cc8e1a9e63b98152; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_color_convert_1, cache-ID = 6e6fadd8f3466e5d; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m06_regslice_4, cache-ID = cc8e1a9e63b98152; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_mb_bram_ctrl_1, cache-ID = b4067ecef9c83fc0; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_dff_en_reset_vector_0_1, cache-ID = c848ad6164613f8f; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_lmb_bram_2, cache-ID = f3de3bd6345a9e48; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m09_regslice_0, cache-ID = 7548e0abd075a3b7; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_rst_clk_wiz_1_100M_1, cache-ID = 2e16cee739b63545; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_iic_0, cache-ID = bf4a4ddc57301a5f; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m04_regslice_6, cache-ID = 33c388ee738f44d1; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_mb_bram_ctrl_2, cache-ID = b4067ecef9c83fc0; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_intr_1, cache-ID = 9304e8ffff5c737a; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_lmb_bram_if_cntlr_1, cache-ID = b4a034691dff0a31; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m08_regslice_0, cache-ID = 33c388ee738f44d1; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_rst_clk_wiz_1_100M_3, cache-ID = 2e16cee739b63545; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_dlmb_v10_1, cache-ID = 12c61f65b5ef0177; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m07_regslice_5, cache-ID = a9b4524484b616ff; cache size = 45.206 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_mb_bram_ctrl_3, cache-ID = b4067ecef9c83fc0; cache size = 45.206 MB.
+config_ip_cache: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 14637.293 ; gain = 0.000 ; free physical = 26967 ; free virtual = 37606
+[Mon Mar 11 10:47:47 2019] Launched base_xbar_2_synth_1, base_spi_direct_0_synth_1, base_spi_shared_0_synth_1, base_timer_0_0_synth_1, base_timer_1_0_synth_1, base_timer_2_0_synth_1, base_timer_3_0_synth_1, base_timer_4_0_synth_1, base_timer_5_0_synth_1, base_uartlite_0_synth_1, base_xadc_0_synth_1, base_gpio_0_synth_1, base_intc_1_synth_1, base_io_switch_1_synth_1, base_spi_0_synth_1, base_timer_0_synth_1, base_gpio_1_synth_1, base_intc_2_synth_1, base_io_switch_2_synth_1, base_spi_1_synth_1, base_timer_1_synth_1, base_spi_1_0_synth_1, base_timer_0_1_synth_1, base_timer_1_1_synth_1, base_uartlite_1_synth_1, base_xbar_6_synth_1, base_xbar_7_synth_1, base_xbar_8_synth_1, base_rgbleds_gpio_0_synth_1, base_rst_ps7_0_fclk0_0_synth_1, base_rst_ps7_0_fclk1_0_synth_1, base_rst_ps7_0_fclk3_0_synth_1, base_switches_gpio_0_synth_1, base_system_interrupts_0_synth_1, base_axi_dma_0_0_synth_1, base_axis_data_fifo_0_0_synth_1, base_xbar_9_synth_1, base_xbar_10_synth_1, base_axi_vdma_0_synth_1, base_axis_register_slice_0_0_synth_1, base_axi_gpio_hdmiin_0_synth_1, base_color_swap_0_0_synth_1, base_pixel_pack_0_synth_1, base_axis_register_slice_0_1_synth_1, base_axi_dynclk_0_synth_1, base_color_swap_0_1_synth_1, base_rgb2dvi_0_0_synth_1, base_v_axi4s_vid_out_0_0_synth_1, base_vtc_out_0_synth_1, base_pixel_unpack_0_synth_1, base_proc_sys_reset_pixelclk_0_synth_1, base_collector_pmoda_rpi_0_synth_1, base_collector_rpi_27_8_0_synth_1, base_distributor_rpi_0_synth_1, base_pmoda_rpi_o_sel_0_synth_1, base_pmoda_rpi_t_sel_0_synth_1, base_m04_regslice_0_synth_1, base_m05_regslice_0_synth_1, base_auto_pc_8_synth_1, base_s00_regslice_4_synth_1, base_m06_regslice_5_synth_1, base_segment_stream_0_0_synth_1, base_auto_pc_0_synth_1, base_m14_regslice_0_synth_1, base_auto_us_0_synth_1, base_m07_regslice_3_synth_1, base_m03_regslice_0_synth_1, base_m02_regslice_0_synth_1, base_auto_pc_5_synth_1, base_m05_regslice_4_synth_1, base_m05_regslice_2_synth_1, base_m06_regslice_2_synth_1, base_m07_regslice_2_synth_1, base_m01_regslice_0_synth_1, base_auto_us_1_synth_1, base_s00_regslice_3_synth_1, base_m01_regslice_3_synth_1, base_m00_regslice_3_synth_1, base_m04_regslice_4_synth_1, base_m02_regslice_4_synth_1, base_auto_pc_2_synth_1, base_auto_pc_3_synth_1, base_auto_pc_4_synth_1, base_m01_regslice_1_synth_1, base_m03_regslice_1_synth_1, base_m02_regslice_1_synth_1, base_m06_regslice_0_synth_1, base_m07_regslice_0_synth_1, base_m00_regslice_5_synth_1, base_m01_regslice_5_synth_1, base_auto_pc_1_synth_1, base_auto_pc_6_synth_1, base_auto_pc_7_synth_1, base_m07_regslice_4_synth_1, base_m03_regslice_5_synth_1, base_m02_regslice_5_synth_1, base_m00_regslice_4_synth_1, base_m01_regslice_2_synth_1, base_m02_regslice_2_synth_1, base_m00_regslice_2_synth_1, base_m03_regslice_2_synth_1, base_s00_regslice_2_synth_1, base_m07_regslice_1_synth_1, base_m11_regslice_1_synth_1, base_m06_regslice_1_synth_1, base_m05_regslice_1_synth_1, base_m04_regslice_3_synth_1, base_s00_regslice_0_synth_1, base_m02_regslice_3_synth_1, base_m03_regslice_3_synth_1, base_m00_regslice_0_synth_1, base_m05_regslice_3_synth_1, base_m06_regslice_3_synth_1, base_m00_regslice_6_synth_1, base_auto_pc_9_synth_1, base_auto_pc_10_synth_1, base_auto_cc_2_synth_1, base_auto_pc_11_synth_1, base_m04_regslice_5_synth_1, base_m00_regslice_1_synth_1, base_m02_regslice_6_synth_1, base_m05_regslice_5_synth_1, base_s00_regslice_1_synth_1, base_auto_cc_5_synth_1, base_m08_regslice_2_synth_1, base_m09_regslice_2_synth_1, base_auto_us_2_synth_1, synth_1...
+Run output will be captured here:
+base_xbar_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_2_synth_1/runme.log
+base_spi_direct_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_direct_0_synth_1/runme.log
+base_spi_shared_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_shared_0_synth_1/runme.log
+base_timer_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_0_synth_1/runme.log
+base_timer_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_0_synth_1/runme.log
+base_timer_2_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_2_0_synth_1/runme.log
+base_timer_3_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_3_0_synth_1/runme.log
+base_timer_4_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_4_0_synth_1/runme.log
+base_timer_5_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/runme.log
+base_uartlite_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_uartlite_0_synth_1/runme.log
+base_xadc_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xadc_0_synth_1/runme.log
+base_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_gpio_0_synth_1/runme.log
+base_intc_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_1_synth_1/runme.log
+base_io_switch_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1/runme.log
+base_spi_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_0_synth_1/runme.log
+base_timer_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_synth_1/runme.log
+base_gpio_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_gpio_1_synth_1/runme.log
+base_intc_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_2_synth_1/runme.log
+base_io_switch_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_2_synth_1/runme.log
+base_spi_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_1_synth_1/runme.log
+base_timer_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_synth_1/runme.log
+base_spi_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_1_0_synth_1/runme.log
+base_timer_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_1_synth_1/runme.log
+base_timer_1_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_1_synth_1/runme.log
+base_uartlite_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_uartlite_1_synth_1/runme.log
+base_xbar_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_6_synth_1/runme.log
+base_xbar_7_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_7_synth_1/runme.log
+base_xbar_8_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_8_synth_1/runme.log
+base_rgbleds_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rgbleds_gpio_0_synth_1/runme.log
+base_rst_ps7_0_fclk0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk0_0_synth_1/runme.log
+base_rst_ps7_0_fclk1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk1_0_synth_1/runme.log
+base_rst_ps7_0_fclk3_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk3_0_synth_1/runme.log
+base_switches_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_switches_gpio_0_synth_1/runme.log
+base_system_interrupts_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_system_interrupts_0_synth_1/runme.log
+base_axi_dma_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dma_0_0_synth_1/runme.log
+base_axis_data_fifo_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_data_fifo_0_0_synth_1/runme.log
+base_xbar_9_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_9_synth_1/runme.log
+base_xbar_10_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_10_synth_1/runme.log
+base_axi_vdma_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_vdma_0_synth_1/runme.log
+base_axis_register_slice_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_register_slice_0_0_synth_1/runme.log
+base_axi_gpio_hdmiin_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_gpio_hdmiin_0_synth_1/runme.log
+base_color_swap_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_swap_0_0_synth_1/runme.log
+base_pixel_pack_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pixel_pack_0_synth_1/runme.log
+base_axis_register_slice_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_register_slice_0_1_synth_1/runme.log
+base_axi_dynclk_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dynclk_0_synth_1/runme.log
+base_color_swap_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_swap_0_1_synth_1/runme.log
+base_rgb2dvi_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rgb2dvi_0_0_synth_1/runme.log
+base_v_axi4s_vid_out_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_v_axi4s_vid_out_0_0_synth_1/runme.log
+base_vtc_out_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_vtc_out_0_synth_1/runme.log
+base_pixel_unpack_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pixel_unpack_0_synth_1/runme.log
+base_proc_sys_reset_pixelclk_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_proc_sys_reset_pixelclk_0_synth_1/runme.log
+base_collector_pmoda_rpi_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_collector_pmoda_rpi_0_synth_1/runme.log
+base_collector_rpi_27_8_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_collector_rpi_27_8_0_synth_1/runme.log
+base_distributor_rpi_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_distributor_rpi_0_synth_1/runme.log
+base_pmoda_rpi_o_sel_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pmoda_rpi_o_sel_0_synth_1/runme.log
+base_pmoda_rpi_t_sel_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pmoda_rpi_t_sel_0_synth_1/runme.log
+base_m04_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_0_synth_1/runme.log
+base_m05_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_0_synth_1/runme.log
+base_auto_pc_8_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_8_synth_1/runme.log
+base_s00_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_4_synth_1/runme.log
+base_m06_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_5_synth_1/runme.log
+base_segment_stream_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_segment_stream_0_0_synth_1/runme.log
+base_auto_pc_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_0_synth_1/runme.log
+base_m14_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m14_regslice_0_synth_1/runme.log
+base_auto_us_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_0_synth_1/runme.log
+base_m07_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_3_synth_1/runme.log
+base_m03_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_0_synth_1/runme.log
+base_m02_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_0_synth_1/runme.log
+base_auto_pc_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_5_synth_1/runme.log
+base_m05_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_4_synth_1/runme.log
+base_m05_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_2_synth_1/runme.log
+base_m06_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_2_synth_1/runme.log
+base_m07_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_2_synth_1/runme.log
+base_m01_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_0_synth_1/runme.log
+base_auto_us_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_1_synth_1/runme.log
+base_s00_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_3_synth_1/runme.log
+base_m01_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_3_synth_1/runme.log
+base_m00_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_3_synth_1/runme.log
+base_m04_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_4_synth_1/runme.log
+base_m02_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_4_synth_1/runme.log
+base_auto_pc_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_2_synth_1/runme.log
+base_auto_pc_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_3_synth_1/runme.log
+base_auto_pc_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_4_synth_1/runme.log
+base_m01_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_1_synth_1/runme.log
+base_m03_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_1_synth_1/runme.log
+base_m02_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_1_synth_1/runme.log
+base_m06_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_0_synth_1/runme.log
+base_m07_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_0_synth_1/runme.log
+base_m00_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_5_synth_1/runme.log
+base_m01_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_5_synth_1/runme.log
+base_auto_pc_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_1_synth_1/runme.log
+base_auto_pc_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_6_synth_1/runme.log
+base_auto_pc_7_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_7_synth_1/runme.log
+base_m07_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_4_synth_1/runme.log
+base_m03_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_5_synth_1/runme.log
+base_m02_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_5_synth_1/runme.log
+base_m00_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_4_synth_1/runme.log
+base_m01_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_2_synth_1/runme.log
+base_m02_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_2_synth_1/runme.log
+base_m00_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_2_synth_1/runme.log
+base_m03_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_2_synth_1/runme.log
+base_s00_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_2_synth_1/runme.log
+base_m07_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_1_synth_1/runme.log
+base_m11_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m11_regslice_1_synth_1/runme.log
+base_m06_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_1_synth_1/runme.log
+base_m05_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_1_synth_1/runme.log
+base_m04_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_3_synth_1/runme.log
+base_s00_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_0_synth_1/runme.log
+base_m02_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_3_synth_1/runme.log
+base_m03_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_3_synth_1/runme.log
+base_m00_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_0_synth_1/runme.log
+base_m05_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_3_synth_1/runme.log
+base_m06_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_3_synth_1/runme.log
+base_m00_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_6_synth_1/runme.log
+base_auto_pc_9_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_9_synth_1/runme.log
+base_auto_pc_10_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_10_synth_1/runme.log
+base_auto_cc_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_2_synth_1/runme.log
+base_auto_pc_11_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_11_synth_1/runme.log
+base_m04_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_5_synth_1/runme.log
+base_m00_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_1_synth_1/runme.log
+base_m02_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_6_synth_1/runme.log
+base_m05_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_5_synth_1/runme.log
+base_s00_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_1_synth_1/runme.log
+base_auto_cc_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_5_synth_1/runme.log
+base_m08_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m08_regslice_2_synth_1/runme.log
+base_m09_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m09_regslice_2_synth_1/runme.log
+base_auto_us_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_2_synth_1/runme.log
+synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/synth_1/runme.log
+[Mon Mar 11 10:49:11 2019] Launched impl_1...
+Run output will be captured here: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:03:08 ; elapsed = 00:03:40 . Memory (MB): peak = 14637.293 ; gain = 0.000 ; free physical = 24187 ; free virtual = 34915
+add_files -fileset constrs_1 -norecurse /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/vivado/constraints/base.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 11 11:11:16 2019] Launched synth_1...
+Run output will be captured here: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/synth_1/runme.log
+[Mon Mar 11 11:11:16 2019] Launched impl_1...
+Run output will be captured here: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 14637.293 ; gain = 0.000 ; free physical = 25782 ; free virtual = 36681

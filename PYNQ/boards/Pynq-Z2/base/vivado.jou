@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar  8 11:40:37 2019
+# Process ID: 27115
+# Current directory: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base
+# Command line: vivado
+# Log file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/vivado.log
+# Journal file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/vivado.jou
+#-----------------------------------------------------------
+start_gui
+pwd
+source ./base.tcl
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip /home/eashanw/Audio_open/audio-revamp-soc/adau1761_1.0} [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:audio_direct:1.1 audio_direct_0
+endgroup
+delete_bd_objs [get_bd_cells audio_direct_0]
+set_property  ip_repo_paths  /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip /home/eashanw/Audio_open/audio-revamp-soc/Audio_Stream_Adau1761/Audio_Stream_Adau1761/ip} [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:adau1761:1.0 adau1761_0
+endgroup
+set_property location {7 3305 3088} [get_bd_cells adau1761_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:segment_stream:1.0 segment_stream_0
+endgroup
+set_property location {5 2837 3054} [get_bd_cells segment_stream_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI]
+delete_bd_objs [get_bd_nets audio_codec_ctrl_0_codec_address] [get_bd_nets audio_codec_ctrl_0_BCLK] [get_bd_nets audio_codec_ctrl_0_LRCLK] [get_bd_nets SDATA_I_1] [get_bd_nets audio_codec_ctrl_0_SDATA_O] [get_bd_cells audio_codec_ctrl_0]
+connect_bd_net [get_bd_ports bclk] [get_bd_pins adau1761_0/BCLK]
+connect_bd_net [get_bd_ports lrclk] [get_bd_pins adau1761_0/LRCLK]
+connect_bd_net [get_bd_ports sdata_o] [get_bd_pins adau1761_0/SDATA_O]
+connect_bd_net [get_bd_ports codec_addr] [get_bd_pins adau1761_0/SDATA_O]
+connect_bd_net [get_bd_ports sdata_i] [get_bd_pins adau1761_0/SDATA_I]
+connect_bd_net [get_bd_pins adau1761_0/s_axi_aclk] [get_bd_pins ps7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins adau1761_0/s_axi_aresetn] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn]
+set_property location {6 3272 2914} [get_bd_cells segment_stream_0]
+connect_bd_intf_net [get_bd_intf_pins adau1761_0/M_AXIS] [get_bd_intf_pins segment_stream_0/S_AXIS]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup

@@ -1,0 +1,1769 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 10 10:25:55 2019
+# Process ID: 21440
+# Current directory: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base
+# Command line: vivado base.xpr
+# Log file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/vivado.log
+# Journal file: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/eashanw/Audio_open/audio-revamp-soc/Audio_Stream_Adau1761/Audio_Stream_Adau1761/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.3_released/installs/lin64/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 6589.000 ; gain = 297.449 ; free physical = 27692 ; free virtual = 38183
+update_compile_order -fileset sources_1
+open_bd_design {/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd}
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_10MHz
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - concat_interrupts
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - concat_pmodb
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - concat_rp
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_8bit_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - arduino_gpio
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic_direct
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - interrupt_concat
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:11.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m10_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m11_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m12_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m13_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m14_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m15_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m16_regslice
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_direct
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_shared
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_4
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_5
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_6
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_7
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb3_timer_generate
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb3_timer_pwm
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb3_timers_interrupt
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_1
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_2
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_3
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_4
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_5
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - uartlite
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_arduino/clk_100M(clk) and /iop_arduino/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - iop_interrupts
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - gpio
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:11.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmoda/clk_100M(clk) and /iop_pmoda/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - gpio
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:11.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmodb/clk_100M(clk) and /iop_pmodb/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic_1
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:11.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - mb_bram_ctrl
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m10_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m11_regslice
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - rpi_gpio
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_0
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb4_timer_pwm
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb4_timers_interrupt
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_1
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - uartlite
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_rpi/clk_100M(clk) and /iop_rpi/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_arduino_intr_ack
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_arduino_reset
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmoda_intr_ack
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmoda_reset
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmodb_intr_ack
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmodb_reset
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_rpi_intr_ack
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_rpi_reset
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pmoda_rp_pin_sel
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - rgbleds_gpio
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk3
+Adding cell -- xilinx.com:user:interface_slice:1.0 - slice_pmodb_gpio
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - system_interrupts
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_tkeep_tstrb
+Adding cell -- xilinx.com:hls:trace_cntrl_64:1.4 - trace_cntrl_64_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_tkeep_tstrb
+Adding cell -- xilinx.com:hls:trace_cntrl_32:1.4 - trace_cntrl_32_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding cell -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding cell -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_hdmiin
+Adding cell -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - vtc_in
+Adding cell -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+Adding cell -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding cell -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+Adding cell -- xilinx.com:user:color_swap:1.1 - color_swap_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - vtc_out
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video/hdmi_out/frontend/axi_dynclk/LOCKED_O(undef) and /video/hdmi_out/frontend/rgb2dvi_0/aRst_n(rst)
+Adding cell -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_pixelclk
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:user:wire_distributor:1.0 - collector_pmoda_rpi
+Adding cell -- xilinx.com:user:wire_distributor:1.0 - collector_rpi_27_8
+Adding cell -- xilinx.com:user:wire_distributor:1.0 - distributor_pmoda
+Adding cell -- xilinx.com:user:wire_distributor:1.0 - distributor_rpi
+Adding cell -- xilinx.com:user:mux_vector:1.0 - pmoda_rpi_o_sel
+Adding cell -- xilinx.com:user:mux_vector:1.0 - pmoda_rpi_t_sel
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - rpi_i_27_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pmoda_rpi_1_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pmoda_rpi_3_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pmoda_rpi_5_4
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pmoda_rpi_7_6
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - rpi2pmoda
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_o_27_8
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - rpi2pmoda
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_1_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_3_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_5_4
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_7_6
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_t_27_8
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - rpi2pmoda
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_1_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_3_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_5_4
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rpi_7_6
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:user:adau1761:1.0 - adau1761_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_CNTRL. Setting parameter on /axi_dma_0/M_AXIS_CNTRL failed
+Successfully read diagram <base> from BD file </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd>
+open_bd_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 10844.070 ; gain = 0.000 ; free physical = 27607 ; free virtual = 38096
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_include_stscntrl_strm {0} CONFIG.c_micro_dma {0} CONFIG.c_m_axi_mm2s_data_width {64} CONFIG.c_m_axis_mm2s_tdata_width {64} CONFIG.c_include_mm2s_dre {0} CONFIG.c_mm2s_burst_size {8} CONFIG.c_include_s2mm {1} CONFIG.c_include_s2mm_dre {0}] [get_bd_cells axi_dma_0]
+set_property location {5 2773 3045} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins adau1761_0/S_AXIS]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:segment_stream:1.0 segment_stream_0
+create_bd_cell: Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:10 . Memory (MB): peak = 10844.070 ; gain = 0.000 ; free physical = 27532 ; free virtual = 38032
+endgroup
+set_property location {7 3310 3178} [get_bd_cells segment_stream_0]
+connect_bd_intf_net [get_bd_intf_pins segment_stream_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins adau1761_0/M_AXIS] [get_bd_intf_pins segment_stream_0/S_AXIS]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {11}] [get_bd_cells video/axi_interconnect_0]
+delete_bd_objs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 11263.461 ; gain = 0.000 ; free physical = 27483 ; free virtual = 37977
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins video/axi_interconnect_0/M10_AXI] [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {3}] [get_bd_cells axi_mem_intercon]
+endgroup
+startgroup
+set_property -dict [list CONFIG.NUM_SI {4} CONFIG.NUM_MI {1} CONFIG.NUM_MI {1}] [get_bd_cells axi_mem_intercon]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_mem_intercon/S02_AXI] [get_bd_intf_pins axi_dma_0/M_AXI_MM2S]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_mem_intercon/S03_AXI] [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+save_bd_design
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+save_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 11414.848 ; gain = 0.000 ; free physical = 27450 ; free virtual = 37946
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M03_AXI] [get_bd_intf_pins adau1761_0/S_AXI]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {5}] [get_bd_cells ps7_0_axi_periph1]
+delete_bd_objs: Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:10 . Memory (MB): peak = 11414.848 ; gain = 0.000 ; free physical = 27445 ; free virtual = 37940
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph1/M04_AXI] [get_bd_intf_pins segment_stream_0/S_AXI]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {9}] [get_bd_cells concat_interrupts]
+endgroup
+connect_bd_net [get_bd_pins concat_interrupts/In7] [get_bd_pins concat_pmodb/dout]
+disconnect_bd_net /concat_pmodb_dout [get_bd_pins concat_interrupts/In7]
+connect_bd_net [get_bd_pins concat_interrupts/In7] [get_bd_pins axi_dma_0/mm2s_introut]
+connect_bd_net [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins concat_interrupts/In8]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/ps7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins axi_mem_intercon/S02_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/ps7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins axi_mem_intercon/S03_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/ps7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins ps7_0_axi_periph1/M04_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/ps7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins axi_dma_0/s_axi_lite_aclk]
+INFO: [BD 5-455] Automation on '/axi_dma_0/m_axi_mm2s_aclk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/axi_dma_0/m_axi_s2mm_aclk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/segment_stream_0/aclk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/video/axi_interconnect_0/M10_ACLK' will not be run, since it is obsolete due to previously run automations
+endgroup
+save_bd_design
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1356] Address block </axi_dma_0/S_AXI_LITE/Reg> is not mapped into </ps7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </adau1761_0/S_AXI/S_AXI_reg> is not mapped into </ps7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </segment_stream_0/S_AXI/S_AXI_reg> is not mapped into </ps7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_MM2S>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_S2MM>. Please use Address Editor to either map or exclude it.
+delete_bd_objs: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:09 . Memory (MB): peak = 11716.969 ; gain = 0.000 ; free physical = 27381 ; free virtual = 37879
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/S_AXIS is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/M_AXIS is not associated to any clock pin. It may not work correctly.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+INFO: [Common 17-14] Message 'BD 41-1284' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmoda/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmodb/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_arduino/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_rpi/lmb/lmb_bram> to default.
+CRITICAL WARNING: [BD 41-1356] Address block </axi_dma_0/S_AXI_LITE/Reg> is not mapped into </ps7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </adau1761_0/S_AXI/S_AXI_reg> is not mapped into </ps7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </segment_stream_0/S_AXI/S_AXI_reg> is not mapped into </ps7_0/Data>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_MM2S>. Please use Address Editor to either map or exclude it.
+CRITICAL WARNING: [BD 41-1356] Address block </ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is not mapped into </axi_dma_0/Data_S2MM>. Please use Address Editor to either map or exclude it.
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (17) does not match property SENSITIVITY (14 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_G(8:0): int8 against /video/hdmi_out/frontend video_in-TDATA: p1(8:0): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_B(16:8): int8 against /video/hdmi_out/frontend video_in-TDATA: p2(16:8): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_R(24:16): int8 against /video/hdmi_out/frontend video_in-TDATA: p3(24:16): int8.
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /adau1761_0/S_AXIS(4) and /axi_dma_0/M_AXIS_MM2S(8)
+WARNING: [BD 41-927] Following properties on pin /iop_arduino/xadc/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK2 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/SerialClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/segment_stream_0/aresetn
+
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_arduino/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmoda/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmodb/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_rpi/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/adau1761_0/s_axis_tdata'(32) to net 'axi_dma_0_M_AXIS_MM2S_TDATA'(64) - Only lower order bits will be connected.
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_arduino/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmoda/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmodb/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_rpi/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/adau1761_0/s_axis_tdata'(32) to net 'axi_dma_0_M_AXIS_MM2S_TDATA'(64) - Only lower order bits will be connected.
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_10MHz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_pmodb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_rp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block constant_8bit_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/arduino_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/iic_direct .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/interrupt_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/spi_subsystem/spi_direct .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/spi_subsystem/spi_shared .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_generate .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_pwm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timers_interrupt .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/uartlite .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/xadc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/iic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/spi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/timer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/iic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/spi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/timer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/iic_subsystem/iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/iic_subsystem/iic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/rpi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/spi_subsystem/spi_0 .
+INFO: [Common 17-14] Message 'BD 41-1029' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_11/base_auto_pc_11_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_4/base_auto_cc_4_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_5/base_auto_cc_5_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_12/base_auto_pc_12_ooc.xdc'
+Exporting to file /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hw_handoff/base.hwh
+Generated Block Design Tcl file /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hw_handoff/base_bd.tcl
+Generated Hardware Definition File /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/synth/base.hwdef
+CRITICAL WARNING: [filemgmt 20-730] Could not find a top module in the fileset sources_1.
+Resolution: With the gui up, review the source files in the Sources window. Use Add Sources to add any needed sources. If the files are disabled, enable them. You can also select the file and choose Set Used In from the pop-up menu. Review if they are being used at the proper points of the flow.
+ERROR: [Common 17-70] Application Exception: Top module not set for fileset 'sources_1'. Please ensure that a valid value is provided for 'top'. The value for 'top' can be set/changed using the 'Top Module Name' field under 'Project Settings', or using the 'set_property top' Tcl command (e.g. set_property top <name> [current_fileset]).
+assign_bd_address
+</ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_MM2S> at <0x00000000 [ 512M ]>
+</ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_S2MM> at <0x00000000 [ 512M ]>
+</adau1761_0/S_AXI/S_AXI_reg> is being mapped into </ps7_0/Data> at <0x43C00000 [ 64K ]>
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </ps7_0/Data> at <0x40400000 [ 64K ]>
+</segment_stream_0/S_AXI/S_AXI_reg> is being mapped into </ps7_0/Data> at <0x43C80000 [ 64K ]>
+assign_bd_address: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 12224.371 ; gain = 0.000 ; free physical = 26204 ; free virtual = 36906
+reset_target all [get_files  /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd]
+reset_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 13405.121 ; gain = 0.000 ; free physical = 26269 ; free virtual = 36908
+export_ip_user_files -of_objects  [get_files  /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd]
+delete_ip_run: Time (s): cpu = 00:03:35 ; elapsed = 00:04:33 . Memory (MB): peak = 13405.121 ; gain = 0.000 ; free physical = 25913 ; free virtual = 36543
+make_wrapper -files [get_files /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd] -top
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/S_AXIS is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/M_AXIS is not associated to any clock pin. It may not work correctly.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+INFO: [Common 17-14] Message 'BD 41-1284' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmoda/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmodb/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_arduino/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_rpi/lmb/lmb_bram> to default.
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (17) does not match property SENSITIVITY (14 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_G(8:0): int8 against /video/hdmi_out/frontend video_in-TDATA: p1(8:0): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_B(16:8): int8 against /video/hdmi_out/frontend video_in-TDATA: p2(16:8): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_R(24:16): int8 against /video/hdmi_out/frontend video_in-TDATA: p3(24:16): int8.
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /adau1761_0/S_AXIS(4) and /axi_dma_0/M_AXIS_MM2S(8)
+WARNING: [BD 41-927] Following properties on pin /iop_arduino/xadc/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK2 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/SerialClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/segment_stream_0/aresetn
+
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_arduino/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmoda/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmodb/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_rpi/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/adau1761_0/s_axis_tdata'(32) to net 'axi_dma_0_M_AXIS_MM2S_TDATA'(64) - Only lower order bits will be connected.
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_arduino/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmoda/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmodb/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_rpi/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/adau1761_0/s_axis_tdata'(32) to net 'axi_dma_0_M_AXIS_MM2S_TDATA'(64) - Only lower order bits will be connected.
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+make_wrapper: Time (s): cpu = 00:01:57 ; elapsed = 00:02:10 . Memory (MB): peak = 13405.121 ; gain = 0.000 ; free physical = 25856 ; free virtual = 36488
+add_files -norecurse /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v
+startgroup
+set_property -dict [list CONFIG.c_mm2s_burst_size {4}] [get_bd_cells axi_dma_0]
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/S_AXIS is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/M_AXIS is not associated to any clock pin. It may not work correctly.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+INFO: [Common 17-14] Message 'BD 41-1284' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmoda/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmodb/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_arduino/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_rpi/lmb/lmb_bram> to default.
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (17) does not match property SENSITIVITY (14 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_G(8:0): int8 against /video/hdmi_out/frontend video_in-TDATA: p1(8:0): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_B(16:8): int8 against /video/hdmi_out/frontend video_in-TDATA: p2(16:8): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_R(24:16): int8 against /video/hdmi_out/frontend video_in-TDATA: p3(24:16): int8.
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /adau1761_0/S_AXIS(4) and /axi_dma_0/M_AXIS_MM2S(8)
+WARNING: [BD 41-927] Following properties on pin /iop_arduino/xadc/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK2 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/SerialClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/segment_stream_0/aresetn
+
+validate_bd_design: Time (s): cpu = 00:01:52 ; elapsed = 00:02:03 . Memory (MB): peak = 13405.121 ; gain = 0.000 ; free physical = 25847 ; free virtual = 36449
+startgroup
+set_property -dict [list CONFIG.c_s2mm_burst_size {8}] [get_bd_cells axi_dma_0]
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/S_AXIS is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /adau1761_0/M_AXIS is not associated to any clock pin. It may not work correctly.
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /system_interrupts/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_arduino/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmoda/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_pmodb/intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /iop_rpi/intc/intr
+INFO: [Common 17-14] Message 'BD 41-1284' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmoda/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmodb/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_arduino/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_rpi/lmb/lmb_bram> to default.
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (17) does not match property SENSITIVITY (14 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_G(8:0): int8 against /video/hdmi_out/frontend video_in-TDATA: p1(8:0): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_B(16:8): int8 against /video/hdmi_out/frontend video_in-TDATA: p2(16:8): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_R(24:16): int8 against /video/hdmi_out/frontend video_in-TDATA: p3(24:16): int8.
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /adau1761_0/S_AXIS(4) and /axi_dma_0/M_AXIS_MM2S(8)
+WARNING: [BD 41-927] Following properties on pin /iop_arduino/xadc/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/RefClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK2 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/REF_CLK_I have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_ps7_0_0_FCLK_CLK0 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/rgb2dvi_0/SerialClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=base_axi_dynclk_0_PXL_CLK_5X_O 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/segment_stream_0/aresetn
+
+validate_bd_design: Time (s): cpu = 00:01:53 ; elapsed = 00:02:18 . Memory (MB): peak = 13405.121 ; gain = 0.000 ; free physical = 25840 ; free virtual = 36442
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'base.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmoda/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_pmodb/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_arduino/lmb/lmb_bram> to default.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </iop_rpi/lmb/lmb_bram> to default.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/segment_stream_0/aresetn
+
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_arduino/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmoda/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmodb/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_rpi/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/adau1761_0/s_axis_tdata'(32) to net 'axi_dma_0_M_AXIS_MM2S_TDATA'(64) - Only lower order bits will be connected.
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_arduino/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmoda/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_pmodb/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/iop_rpi/lmb/lmb_bram/addrb'(32) to net 'Conn1_ADDR'(16) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/adau1761_0/s_axis_tdata'(32) to net 'axi_dma_0_M_AXIS_MM2S_TDATA'(64) - Only lower order bits will be connected.
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ui/bd_a82daa7c.ui> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_10MHz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_pmodb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_rp .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block constant_8bit_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/arduino_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/iic_direct .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/interrupt_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/spi_subsystem/spi_direct .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/spi_subsystem/spi_shared .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_capture_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_generate .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timer_pwm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/mb3_timers_interrupt .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/timers_subsystem/timer_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/uartlite .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_arduino/xadc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/iic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/spi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmoda/timer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/iic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/spi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_pmodb/timer .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/dff_en_reset_vector_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/iic_subsystem/iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/iic_subsystem/iic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/intr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/io_switch .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/lmb/lmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/logic_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/mb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/mb_bram_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/rpi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block iop_rpi/spi_subsystem/spi_0 .
+INFO: [Common 17-14] Message 'BD 41-1029' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_9/base_auto_pc_9_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_10/base_auto_pc_10_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_11/base_auto_pc_11_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_4/base_auto_cc_4_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_cc_5/base_auto_cc_5_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_auto_pc_12/base_auto_pc_12_ooc.xdc'
+Exporting to file /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hw_handoff/base.hwh
+Generated Block Design Tcl file /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hw_handoff/base_bd.tcl
+Generated Hardware Definition File /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/synth/base.hwdef
+[Sun Mar 10 12:01:59 2019] Launched base_m11_regslice_0_synth_1, base_btns_gpio_0_synth_1, base_xbar_0_synth_1, base_xbar_1_synth_1, base_m13_regslice_0_synth_1, base_arduino_gpio_0_synth_1, base_clk_wiz_10MHz_0_synth_1, base_dff_en_reset_vector_0_0_synth_1, base_iic_direct_0_synth_1, base_intc_0_synth_1, base_intr_0_synth_1, base_io_switch_0_synth_1, base_dlmb_v10_0_synth_1, base_ilmb_v10_0_synth_1, base_lmb_bram_0_synth_1, base_lmb_bram_if_cntlr_0_synth_1, base_mb_0_synth_1, base_mb_bram_ctrl_0_synth_1, base_xbar_2_synth_1, base_rst_clk_wiz_1_100M_0_synth_1, base_spi_direct_0_synth_1, base_spi_shared_0_synth_1, base_timer_0_0_synth_1, base_timer_1_0_synth_1, base_timer_2_0_synth_1, base_timer_3_0_synth_1, base_timer_4_0_synth_1, base_timer_5_0_synth_1, base_uartlite_0_synth_1, base_xadc_0_synth_1, base_dff_en_reset_vector_0_1_synth_1, base_gpio_0_synth_1, base_iic_0_synth_1, base_intc_1_synth_1, base_intr_1_synth_1, base_io_switch_1_synth_1, base_dlmb_v10_1_synth_1, base_ilmb_v10_1_synth_1, base_lmb_bram_1_synth_1, base_lmb_bram_if_cntlr_1_synth_1, base_mb_1_synth_1, base_mb_bram_ctrl_1_synth_1, base_xbar_3_synth_1, base_rst_clk_wiz_1_100M_1_synth_1, base_spi_0_synth_1, base_timer_0_synth_1, base_dff_en_reset_vector_0_2_synth_1, base_gpio_1_synth_1, base_iic_1_synth_1, base_intc_2_synth_1, base_intr_2_synth_1, base_io_switch_2_synth_1, base_dlmb_v10_2_synth_1, base_ilmb_v10_2_synth_1, base_lmb_bram_2_synth_1, base_lmb_bram_if_cntlr_2_synth_1, base_mb_2_synth_1, base_mb_bram_ctrl_2_synth_1, base_xbar_4_synth_1, base_rst_clk_wiz_1_100M_2_synth_1, base_spi_1_synth_1, base_timer_1_synth_1, base_dff_en_reset_vector_0_3_synth_1, base_iic_0_0_synth_1, base_iic_1_0_synth_1, base_intc_3_synth_1, base_intr_3_synth_1, base_io_switch_3_synth_1, base_dlmb_v10_3_synth_1, base_ilmb_v10_3_synth_1, base_lmb_bram_3_synth_1, base_lmb_bram_if_cntlr_3_synth_1, base_mb_3_synth_1, base_mb_bram_ctrl_3_synth_1, base_xbar_5_synth_1, base_rpi_gpio_0_synth_1, base_rst_clk_wiz_1_100M_3_synth_1, base_spi_0_0_synth_1, base_spi_1_0_synth_1, base_timer_0_1_synth_1, base_timer_1_1_synth_1, base_uartlite_1_synth_1, base_leds_gpio_0_synth_1, base_mdm_1_0_synth_1, base_ps7_0_0_synth_1, base_xbar_6_synth_1, base_xbar_7_synth_1, base_xbar_8_synth_1, base_rgbleds_gpio_0_synth_1, base_rst_ps7_0_fclk0_0_synth_1, base_rst_ps7_0_fclk1_0_synth_1, base_rst_ps7_0_fclk3_0_synth_1, base_slice_pmodb_gpio_0_synth_1, base_switches_gpio_0_synth_1, base_system_interrupts_0_synth_1, base_axi_dma_0_0_synth_1, base_axis_data_fifo_0_0_synth_1, base_trace_cntrl_64_0_0_synth_1, base_axi_dma_0_1_synth_1, base_axis_data_fifo_0_1_synth_1, base_trace_cntrl_32_0_0_synth_1, base_xbar_9_synth_1, base_xbar_10_synth_1, base_axi_vdma_0_synth_1, base_axis_register_slice_0_0_synth_1, base_color_convert_0_synth_1, base_axi_gpio_hdmiin_0_synth_1, base_color_swap_0_0_synth_1, base_dvi2rgb_0_0_synth_1, base_v_vid_in_axi4s_0_0_synth_1, base_vtc_in_0_synth_1, base_pixel_pack_0_synth_1, base_axis_register_slice_0_1_synth_1, base_color_convert_1_synth_1, base_axi_dynclk_0_synth_1, base_color_swap_0_1_synth_1, base_hdmi_out_hpd_video_0_synth_1, base_rgb2dvi_0_0_synth_1, base_v_axi4s_vid_out_0_0_synth_1, base_vtc_out_0_synth_1, base_pixel_unpack_0_synth_1, base_proc_sys_reset_pixelclk_0_synth_1, base_collector_pmoda_rpi_0_synth_1, base_collector_rpi_27_8_0_synth_1, base_distributor_pmoda_0_synth_1, base_distributor_rpi_0_synth_1, base_pmoda_rpi_o_sel_0_synth_1, base_pmoda_rpi_t_sel_0_synth_1, base_adau1761_0_0_synth_1, base_axi_dma_0_2_synth_1, base_m04_regslice_0_synth_1, base_m05_regslice_0_synth_1, base_auto_pc_8_synth_1, base_s00_regslice_4_synth_1, base_m06_regslice_5_synth_1, base_segment_stream_0_0_synth_1, base_auto_pc_0_synth_1, base_m14_regslice_0_synth_1, base_auto_us_0_synth_1, base_m07_regslice_3_synth_1, base_m09_regslice_1_synth_1, base_m08_regslice_1_synth_1, base_m03_regslice_0_synth_1, base_m02_regslice_0_synth_1, base_auto_pc_5_synth_1, base_m05_regslice_4_synth_1, base_m05_regslice_2_synth_1, base_m06_regslice_2_synth_1, base_m07_regslice_2_synth_1, base_m01_regslice_0_synth_1, base_tier2_xbar_2_0_synth_1, base_tier2_xbar_0_0_synth_1, base_tier2_xbar_1_0_synth_1, base_auto_us_1_synth_1, base_auto_cc_1_synth_1, base_s00_regslice_3_synth_1, base_m01_regslice_3_synth_1, base_m00_regslice_3_synth_1, base_m10_regslice_0_synth_1, base_m04_regslice_4_synth_1, base_m02_regslice_4_synth_1, base_auto_pc_2_synth_1, base_auto_pc_3_synth_1, base_m01_regslice_4_synth_1, base_m03_regslice_4_synth_1, base_auto_pc_4_synth_1, base_m01_regslice_1_synth_1, base_m03_regslice_1_synth_1, base_m02_regslice_1_synth_1, base_m06_regslice_0_synth_1, base_m08_regslice_0_synth_1, base_m09_regslice_0_synth_1, base_m07_regslice_0_synth_1, base_m12_regslice_0_synth_1, base_m00_regslice_5_synth_1, base_m01_regslice_5_synth_1, base_s00_regslice_5_synth_1, base_auto_pc_1_synth_1, base_auto_pc_6_synth_1, base_m06_regslice_4_synth_1, base_auto_pc_7_synth_1, base_m07_regslice_4_synth_1, base_m03_regslice_5_synth_1, base_m02_regslice_5_synth_1, base_auto_cc_0_synth_1, base_m00_regslice_4_synth_1, base_m01_regslice_2_synth_1, base_m04_regslice_2_synth_1, base_m02_regslice_2_synth_1, base_m00_regslice_2_synth_1, base_m03_regslice_2_synth_1, base_s00_regslice_2_synth_1, base_m07_regslice_1_synth_1, base_m10_regslice_1_synth_1, base_m11_regslice_1_synth_1, base_m04_regslice_1_synth_1, base_m06_regslice_1_synth_1, base_m05_regslice_1_synth_1, base_m04_regslice_3_synth_1, base_s00_regslice_0_synth_1, base_m02_regslice_3_synth_1, base_m03_regslice_3_synth_1, base_m00_regslice_0_synth_1, base_m05_regslice_3_synth_1, base_m06_regslice_3_synth_1, base_m00_regslice_6_synth_1, base_s00_regslice_6_synth_1, base_m01_regslice_6_synth_1, base_auto_pc_9_synth_1, base_auto_pc_10_synth_1, base_auto_cc_2_synth_1, base_m04_regslice_6_synth_1, base_auto_pc_11_synth_1, base_m04_regslice_5_synth_1, base_m00_regslice_1_synth_1, base_m15_regslice_0_synth_1, base_m16_regslice_0_synth_1, base_m02_regslice_6_synth_1, base_m05_regslice_5_synth_1, base_auto_cc_3_synth_1, base_m03_regslice_6_synth_1, base_s00_regslice_1_synth_1, base_auto_cc_4_synth_1, base_m07_regslice_5_synth_1, base_auto_cc_5_synth_1, base_m08_regslice_2_synth_1, base_m09_regslice_2_synth_1, base_auto_us_2_synth_1, base_auto_pc_12_synth_1, synth_1...
+Run output will be captured here:
+base_m11_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m11_regslice_0_synth_1/runme.log
+base_btns_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_btns_gpio_0_synth_1/runme.log
+base_xbar_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_0_synth_1/runme.log
+base_xbar_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_1_synth_1/runme.log
+base_m13_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m13_regslice_0_synth_1/runme.log
+base_arduino_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_arduino_gpio_0_synth_1/runme.log
+base_clk_wiz_10MHz_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_clk_wiz_10MHz_0_synth_1/runme.log
+base_dff_en_reset_vector_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dff_en_reset_vector_0_0_synth_1/runme.log
+base_iic_direct_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_iic_direct_0_synth_1/runme.log
+base_intc_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_0_synth_1/runme.log
+base_intr_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_0_synth_1/runme.log
+base_io_switch_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_0_synth_1/runme.log
+base_dlmb_v10_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dlmb_v10_0_synth_1/runme.log
+base_ilmb_v10_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_ilmb_v10_0_synth_1/runme.log
+base_lmb_bram_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_0_synth_1/runme.log
+base_lmb_bram_if_cntlr_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_if_cntlr_0_synth_1/runme.log
+base_mb_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_0_synth_1/runme.log
+base_mb_bram_ctrl_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_bram_ctrl_0_synth_1/runme.log
+base_xbar_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_2_synth_1/runme.log
+base_rst_clk_wiz_1_100M_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_clk_wiz_1_100M_0_synth_1/runme.log
+base_spi_direct_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_direct_0_synth_1/runme.log
+base_spi_shared_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_shared_0_synth_1/runme.log
+base_timer_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_0_synth_1/runme.log
+base_timer_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_0_synth_1/runme.log
+base_timer_2_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_2_0_synth_1/runme.log
+base_timer_3_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_3_0_synth_1/runme.log
+base_timer_4_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_4_0_synth_1/runme.log
+base_timer_5_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_5_0_synth_1/runme.log
+base_uartlite_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_uartlite_0_synth_1/runme.log
+base_xadc_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xadc_0_synth_1/runme.log
+base_dff_en_reset_vector_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dff_en_reset_vector_0_1_synth_1/runme.log
+base_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_gpio_0_synth_1/runme.log
+base_iic_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_iic_0_synth_1/runme.log
+base_intc_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_1_synth_1/runme.log
+base_intr_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_1_synth_1/runme.log
+base_io_switch_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_1_synth_1/runme.log
+base_dlmb_v10_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dlmb_v10_1_synth_1/runme.log
+base_ilmb_v10_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_ilmb_v10_1_synth_1/runme.log
+base_lmb_bram_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_1_synth_1/runme.log
+base_lmb_bram_if_cntlr_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_if_cntlr_1_synth_1/runme.log
+base_mb_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_1_synth_1/runme.log
+base_mb_bram_ctrl_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_bram_ctrl_1_synth_1/runme.log
+base_xbar_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_3_synth_1/runme.log
+base_rst_clk_wiz_1_100M_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_clk_wiz_1_100M_1_synth_1/runme.log
+base_spi_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_0_synth_1/runme.log
+base_timer_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_synth_1/runme.log
+base_dff_en_reset_vector_0_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dff_en_reset_vector_0_2_synth_1/runme.log
+base_gpio_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_gpio_1_synth_1/runme.log
+base_iic_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_iic_1_synth_1/runme.log
+base_intc_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_2_synth_1/runme.log
+base_intr_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_2_synth_1/runme.log
+base_io_switch_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_2_synth_1/runme.log
+base_dlmb_v10_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dlmb_v10_2_synth_1/runme.log
+base_ilmb_v10_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_ilmb_v10_2_synth_1/runme.log
+base_lmb_bram_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_2_synth_1/runme.log
+base_lmb_bram_if_cntlr_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_if_cntlr_2_synth_1/runme.log
+base_mb_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_2_synth_1/runme.log
+base_mb_bram_ctrl_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_bram_ctrl_2_synth_1/runme.log
+base_xbar_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_4_synth_1/runme.log
+base_rst_clk_wiz_1_100M_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_clk_wiz_1_100M_2_synth_1/runme.log
+base_spi_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_1_synth_1/runme.log
+base_timer_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_synth_1/runme.log
+base_dff_en_reset_vector_0_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dff_en_reset_vector_0_3_synth_1/runme.log
+base_iic_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_iic_0_0_synth_1/runme.log
+base_iic_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_iic_1_0_synth_1/runme.log
+base_intc_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intc_3_synth_1/runme.log
+base_intr_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_intr_3_synth_1/runme.log
+base_io_switch_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_io_switch_3_synth_1/runme.log
+base_dlmb_v10_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dlmb_v10_3_synth_1/runme.log
+base_ilmb_v10_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_ilmb_v10_3_synth_1/runme.log
+base_lmb_bram_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_3_synth_1/runme.log
+base_lmb_bram_if_cntlr_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_lmb_bram_if_cntlr_3_synth_1/runme.log
+base_mb_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_3_synth_1/runme.log
+base_mb_bram_ctrl_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mb_bram_ctrl_3_synth_1/runme.log
+base_xbar_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_5_synth_1/runme.log
+base_rpi_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rpi_gpio_0_synth_1/runme.log
+base_rst_clk_wiz_1_100M_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_clk_wiz_1_100M_3_synth_1/runme.log
+base_spi_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_0_0_synth_1/runme.log
+base_spi_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_spi_1_0_synth_1/runme.log
+base_timer_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_0_1_synth_1/runme.log
+base_timer_1_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_timer_1_1_synth_1/runme.log
+base_uartlite_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_uartlite_1_synth_1/runme.log
+base_leds_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_leds_gpio_0_synth_1/runme.log
+base_mdm_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_mdm_1_0_synth_1/runme.log
+base_ps7_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_ps7_0_0_synth_1/runme.log
+base_xbar_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_6_synth_1/runme.log
+base_xbar_7_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_7_synth_1/runme.log
+base_xbar_8_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_8_synth_1/runme.log
+base_rgbleds_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rgbleds_gpio_0_synth_1/runme.log
+base_rst_ps7_0_fclk0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk0_0_synth_1/runme.log
+base_rst_ps7_0_fclk1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk1_0_synth_1/runme.log
+base_rst_ps7_0_fclk3_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk3_0_synth_1/runme.log
+base_slice_pmodb_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_slice_pmodb_gpio_0_synth_1/runme.log
+base_switches_gpio_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_switches_gpio_0_synth_1/runme.log
+base_system_interrupts_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_system_interrupts_0_synth_1/runme.log
+base_axi_dma_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dma_0_0_synth_1/runme.log
+base_axis_data_fifo_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_data_fifo_0_0_synth_1/runme.log
+base_trace_cntrl_64_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_trace_cntrl_64_0_0_synth_1/runme.log
+base_axi_dma_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dma_0_1_synth_1/runme.log
+base_axis_data_fifo_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_data_fifo_0_1_synth_1/runme.log
+base_trace_cntrl_32_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_trace_cntrl_32_0_0_synth_1/runme.log
+base_xbar_9_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_9_synth_1/runme.log
+base_xbar_10_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_xbar_10_synth_1/runme.log
+base_axi_vdma_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_vdma_0_synth_1/runme.log
+base_axis_register_slice_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_register_slice_0_0_synth_1/runme.log
+base_color_convert_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_convert_0_synth_1/runme.log
+base_axi_gpio_hdmiin_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_gpio_hdmiin_0_synth_1/runme.log
+base_color_swap_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_swap_0_0_synth_1/runme.log
+base_dvi2rgb_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_dvi2rgb_0_0_synth_1/runme.log
+base_v_vid_in_axi4s_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_v_vid_in_axi4s_0_0_synth_1/runme.log
+base_vtc_in_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_vtc_in_0_synth_1/runme.log
+base_pixel_pack_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pixel_pack_0_synth_1/runme.log
+base_axis_register_slice_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axis_register_slice_0_1_synth_1/runme.log
+base_color_convert_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_convert_1_synth_1/runme.log
+base_axi_dynclk_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dynclk_0_synth_1/runme.log
+base_color_swap_0_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_color_swap_0_1_synth_1/runme.log
+base_hdmi_out_hpd_video_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_hdmi_out_hpd_video_0_synth_1/runme.log
+base_rgb2dvi_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_rgb2dvi_0_0_synth_1/runme.log
+base_v_axi4s_vid_out_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_v_axi4s_vid_out_0_0_synth_1/runme.log
+base_vtc_out_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_vtc_out_0_synth_1/runme.log
+base_pixel_unpack_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pixel_unpack_0_synth_1/runme.log
+base_proc_sys_reset_pixelclk_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_proc_sys_reset_pixelclk_0_synth_1/runme.log
+base_collector_pmoda_rpi_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_collector_pmoda_rpi_0_synth_1/runme.log
+base_collector_rpi_27_8_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_collector_rpi_27_8_0_synth_1/runme.log
+base_distributor_pmoda_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_distributor_pmoda_0_synth_1/runme.log
+base_distributor_rpi_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_distributor_rpi_0_synth_1/runme.log
+base_pmoda_rpi_o_sel_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pmoda_rpi_o_sel_0_synth_1/runme.log
+base_pmoda_rpi_t_sel_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_pmoda_rpi_t_sel_0_synth_1/runme.log
+base_adau1761_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_adau1761_0_0_synth_1/runme.log
+base_axi_dma_0_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_axi_dma_0_2_synth_1/runme.log
+base_m04_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_0_synth_1/runme.log
+base_m05_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_0_synth_1/runme.log
+base_auto_pc_8_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_8_synth_1/runme.log
+base_s00_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_4_synth_1/runme.log
+base_m06_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_5_synth_1/runme.log
+base_segment_stream_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_segment_stream_0_0_synth_1/runme.log
+base_auto_pc_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_0_synth_1/runme.log
+base_m14_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m14_regslice_0_synth_1/runme.log
+base_auto_us_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_0_synth_1/runme.log
+base_m07_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_3_synth_1/runme.log
+base_m09_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m09_regslice_1_synth_1/runme.log
+base_m08_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m08_regslice_1_synth_1/runme.log
+base_m03_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_0_synth_1/runme.log
+base_m02_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_0_synth_1/runme.log
+base_auto_pc_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_5_synth_1/runme.log
+base_m05_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_4_synth_1/runme.log
+base_m05_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_2_synth_1/runme.log
+base_m06_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_2_synth_1/runme.log
+base_m07_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_2_synth_1/runme.log
+base_m01_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_0_synth_1/runme.log
+base_tier2_xbar_2_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_tier2_xbar_2_0_synth_1/runme.log
+base_tier2_xbar_0_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_tier2_xbar_0_0_synth_1/runme.log
+base_tier2_xbar_1_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_tier2_xbar_1_0_synth_1/runme.log
+base_auto_us_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_1_synth_1/runme.log
+base_auto_cc_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_1_synth_1/runme.log
+base_s00_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_3_synth_1/runme.log
+base_m01_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_3_synth_1/runme.log
+base_m00_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_3_synth_1/runme.log
+base_m10_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m10_regslice_0_synth_1/runme.log
+base_m04_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_4_synth_1/runme.log
+base_m02_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_4_synth_1/runme.log
+base_auto_pc_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_2_synth_1/runme.log
+base_auto_pc_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_3_synth_1/runme.log
+base_m01_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_4_synth_1/runme.log
+base_m03_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_4_synth_1/runme.log
+base_auto_pc_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_4_synth_1/runme.log
+base_m01_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_1_synth_1/runme.log
+base_m03_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_1_synth_1/runme.log
+base_m02_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_1_synth_1/runme.log
+base_m06_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_0_synth_1/runme.log
+base_m08_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m08_regslice_0_synth_1/runme.log
+base_m09_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m09_regslice_0_synth_1/runme.log
+base_m07_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_0_synth_1/runme.log
+base_m12_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m12_regslice_0_synth_1/runme.log
+base_m00_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_5_synth_1/runme.log
+base_m01_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_5_synth_1/runme.log
+base_s00_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_5_synth_1/runme.log
+base_auto_pc_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_1_synth_1/runme.log
+base_auto_pc_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_6_synth_1/runme.log
+base_m06_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_4_synth_1/runme.log
+base_auto_pc_7_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_7_synth_1/runme.log
+base_m07_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_4_synth_1/runme.log
+base_m03_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_5_synth_1/runme.log
+base_m02_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_5_synth_1/runme.log
+base_auto_cc_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_0_synth_1/runme.log
+base_m00_regslice_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_4_synth_1/runme.log
+base_m01_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_2_synth_1/runme.log
+base_m04_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_2_synth_1/runme.log
+base_m02_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_2_synth_1/runme.log
+base_m00_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_2_synth_1/runme.log
+base_m03_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_2_synth_1/runme.log
+base_s00_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_2_synth_1/runme.log
+base_m07_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_1_synth_1/runme.log
+base_m10_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m10_regslice_1_synth_1/runme.log
+base_m11_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m11_regslice_1_synth_1/runme.log
+base_m04_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_1_synth_1/runme.log
+base_m06_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_1_synth_1/runme.log
+base_m05_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_1_synth_1/runme.log
+base_m04_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_3_synth_1/runme.log
+base_s00_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_0_synth_1/runme.log
+base_m02_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_3_synth_1/runme.log
+base_m03_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_3_synth_1/runme.log
+base_m00_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_0_synth_1/runme.log
+base_m05_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_3_synth_1/runme.log
+base_m06_regslice_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m06_regslice_3_synth_1/runme.log
+base_m00_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_6_synth_1/runme.log
+base_s00_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_6_synth_1/runme.log
+base_m01_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m01_regslice_6_synth_1/runme.log
+base_auto_pc_9_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_9_synth_1/runme.log
+base_auto_pc_10_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_10_synth_1/runme.log
+base_auto_cc_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_2_synth_1/runme.log
+base_m04_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_6_synth_1/runme.log
+base_auto_pc_11_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_11_synth_1/runme.log
+base_m04_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m04_regslice_5_synth_1/runme.log
+base_m00_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m00_regslice_1_synth_1/runme.log
+base_m15_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m15_regslice_0_synth_1/runme.log
+base_m16_regslice_0_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m16_regslice_0_synth_1/runme.log
+base_m02_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m02_regslice_6_synth_1/runme.log
+base_m05_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m05_regslice_5_synth_1/runme.log
+base_auto_cc_3_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_3_synth_1/runme.log
+base_m03_regslice_6_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m03_regslice_6_synth_1/runme.log
+base_s00_regslice_1_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_s00_regslice_1_synth_1/runme.log
+base_auto_cc_4_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_4_synth_1/runme.log
+base_m07_regslice_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m07_regslice_5_synth_1/runme.log
+base_auto_cc_5_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_cc_5_synth_1/runme.log
+base_m08_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m08_regslice_2_synth_1/runme.log
+base_m09_regslice_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_m09_regslice_2_synth_1/runme.log
+base_auto_us_2_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_us_2_synth_1/runme.log
+base_auto_pc_12_synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/base_auto_pc_12_synth_1/runme.log
+synth_1: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/synth_1/runme.log
+[Sun Mar 10 12:03:41 2019] Launched impl_1...
+Run output will be captured here: /home/eashanw/Audio_open/audio-revamp-soc/PYNQ/boards/Pynq-Z2/base/base/base.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:04:47 ; elapsed = 00:05:42 . Memory (MB): peak = 13405.121 ; gain = 0.000 ; free physical = 21502 ; free virtual = 32248
+reset_run base_spi_direct_0_synth_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
