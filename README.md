@@ -14,5 +14,5 @@ Avoid forking as this repo is in it's initial stages and has to be updated on my
 
 Inline-style: 
 ![Snapshot from the bd](https://github.com/wady101/PYNQ_Z2-Audio/img/readme1.JPG)
-## Credits
-A big thanks to Cathal McCabe and Peter Ogden for helping me out in doing this.  
+<>## Credits>
+<A big thanks to Cathal McCabe and Peter Ogden for helping me out in doing this.  >
