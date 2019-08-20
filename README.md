@@ -11,6 +11,4 @@ This repository is PYNQ image version independent. Just to briefly cover what th
 * **addup.tcl** TCL file which can be directly sourced in *boards/Pynq-Z2/base/base.tcl*. Will include the new audio streaming IP in the block diagram
 
 Avoid forking as this repo is in it's initial stages and has to be updated on my end. For now the master branch contains all the necessary files needed 
-
-Inline-style: 
 ![Snapshot from the bd](https://github.com/wady101/PYNQ_Z2-Audio/blob/master/img/readme1.JPG "Snapshot od the BD")
