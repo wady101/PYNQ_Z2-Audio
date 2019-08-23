@@ -27,6 +27,8 @@ make clean
 popd 
 
 if 
+scp filename xilinx@192.168.12.1:placewhereuwanttostoreit
+
 
 
 
