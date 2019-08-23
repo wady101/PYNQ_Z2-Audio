@@ -12,3 +12,6 @@ This repository is PYNQ image version independent. Just to briefly cover what th
 
 Avoid forking as this repo is in it's initial stages and has to be updated on my end. For now the master branch contains all the necessary files needed 
 ![Snapshot from the bd](https://github.com/wady101/PYNQ_Z2-Audio/blob/master/img/readme1.JPG "Snapshot od the BD")
+
+## Credits
+Kudos to Cathal McCabe and Peter Ogden for helping me out in this project
