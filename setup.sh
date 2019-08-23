@@ -1,4 +1,6 @@
 #!/bin/bash
+## Made by Eashan Wadhwa
+
 
 present=$PWD
 
