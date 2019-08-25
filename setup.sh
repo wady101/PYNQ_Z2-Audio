@@ -8,7 +8,7 @@ sudo apt-get install smbclient
 set -x
 set -e
 echo -ne '#                         (01%)\r'
-git pull https://github.com/Xilinx/PYNQ
+git clone https://github.com/Xilinx/PYNQ
 echo -ne '##                        (08%)\r'
 ## Line number where the sourcing takes place
 set x = `grep -E --line-number --with-filename 'save_bd_design' ./PYNQ/boards/Pynq-Z2/base/base.tcl | cut -f2 -d: | head -1`
