@@ -1,9 +1,10 @@
 # Audio Revamp PYNQ
 This is a repository for improving the current audio capabilities for PYNQ. The main idelogy behind this repo is to enable audio streaming architectures for the Pynq-Z2 board, thanks to the audio-codec chip present in it , the Adau1761
 
+**WARNING**: Will overwrite exsisting base.py, libsaudio.so and audio.py
+
 This repository is PYNQ image version independent. Just to briefly cover what this repository contains :-
 
-* **makefile** self-explanatory
 * **setup.sh** Will setup all the necessary files in the Z2 board to setup your audio streaming architeture. Also this script is setup such that the PYNQ image version number does not matter. 
 * **Finalizer.ipynb** Contains the Jupyter notebook which can be run on a PYNQ-Z2 board. wavegen.py and sources/ should be saved in the same folder alongside this notebook. Contains all the details about this project.
 * **audio.py base.py sources/AXIS_audio.bit sources/AXIS_audio.tcl** Copied in their respective places in the Z2 image.
