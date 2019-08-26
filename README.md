@@ -10,7 +10,7 @@ This repository is PYNQ image version independent. Just to briefly cover what th
 * **audio.py base.py sources/AXIS_audio.bit sources/AXIS_audio.tcl** Copied in their respective places in the Z2 image.
 * **ip** Contains both the IPs used for the streaming architecture --> adau1761 and segment_stream.
 * **addup.tcl** TCL file which can be directly sourced in *boards/Pynq-Z2/base/base.tcl*. Will include the new audio streaming IP in the block diagram
-* **xsim_tcl/** Contains the TCL files I used to test the IP. Thought that on-the-fly changes in waveform is a better option than using a proper testbench;p.
+* **xsim_tcl/** Contains the TCL files I used to test the IP. Thought that on-the-fly changes in waveform is a better option than using a proper testbench :P.
 
 ![Snapshot from the bd](https://github.com/wady101/PYNQ_Z2-Audio/blob/master/img/readme1.JPG "Snapshot od the BD")
 
