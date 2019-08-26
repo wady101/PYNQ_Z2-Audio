@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="adau1761_v1_0_S_AXI_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="adau1761_v1_0_S_AXI" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="6921fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="113"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/BCLK" type="logic">
+      <obj_property name="ElementShortName">BCLK</obj_property>
+      <obj_property name="ObjectShortName">BCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/LRCLK" type="logic">
+      <obj_property name="ElementShortName">LRCLK</obj_property>
+      <obj_property name="ObjectShortName">LRCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/SDATA_I" type="logic">
+      <obj_property name="ElementShortName">SDATA_I</obj_property>
+      <obj_property name="ObjectShortName">SDATA_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/SDATA_O" type="logic">
+      <obj_property name="ElementShortName">SDATA_O</obj_property>
+      <obj_property name="ObjectShortName">SDATA_O</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/S_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/S_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adau1761_v1_0_S_AXI/stream_wren" type="logic">
+      <obj_property name="ElementShortName">stream_wren</obj_property>
+      <obj_property name="ObjectShortName">stream_wren</obj_property>
+   </wvobject>
+</wave_config>
