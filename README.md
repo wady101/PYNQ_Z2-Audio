@@ -8,7 +8,7 @@ This repository is PYNQ image version independent. Just to briefly cover what th
 * **setup.sh** Will setup all the necessary files in the Z2 board to setup your audio streaming architeture. Also this script is setup such that the PYNQ image version number does not matter. 
 * **Finalizer.ipynb** Contains the Jupyter notebook which can be run on a PYNQ-Z2 board. wavegen.py and sources/ should be saved in the same folder alongside this notebook. Contains all the details about this project.
 * **audio.py base.py sources/AXIS_audio.bit sources/AXIS_audio.tcl** Copied in their respective places in the Z2 image.
-* **ip** Contains both the IPs used for the streaming architecture --> adau1761 and segment_stream.
+* **ip/** Contains both the IPs used for the streaming architecture --> adau1761 and segment_stream.
 * **addup.tcl** TCL file which can be directly sourced in *boards/Pynq-Z2/base/base.tcl*. Will include the new audio streaming IP in the block diagram
 * **xsim_tcl/** Contains the TCL files I used to test the IP. Thought that on-the-fly changes in waveform is a better option than using a proper testbench :P.
 
